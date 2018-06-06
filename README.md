@@ -43,6 +43,7 @@ We recommend the following setup
     - with php-fpm, mbstring, gd2 with freetype, imap, ldap, zip, zlib and databse drivers
  - mysql 5.5.50
 
+
 ## Manual
 for more information please refer to our [homepage](http://www.limesurvey.org), or have a look at the [manual](http://manual.limesurvey.org) 
 
@@ -50,3 +51,18 @@ for more information please refer to our [homepage](http://www.limesurvey.org), 
 LimeSurvey software is licenced under the [GPL 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
 Pictures and the LimeSurvey Logo are registered trademarks of LimeSurvey GmbH, Hamburg, Germany.
+
+## Licence
+
+# Installation
+
+##Composants nécéssaire
+Afin de pouvoir utiliser LimeSurvey il faut préalablement installer :
+- XAMPP (ou équivalent)
+- Composer (dependancy manager for PHP)
+- MySQL
+
+##Etapes
+1. Installer XAMPP
+2. Installer Composer
+3. 
