@@ -1,0 +1,57 @@
+{#
+
+!!!! BECAREFUL: ONLY FOR TESTING !!!!!
+!!!! DON'T START TO TRANSLATE ALL VIEWS BASED ON THIS MODEL !!!!!
+
+!!!! IT WILL PROBABLY FIRST NEED TO CHANGE  THE TWIG TEMPLATE SYNTAX TO AVOID CONFLICT WITH EXPRESSION MANAGER !!!!
+
+/**
+ * Multiple Choice Html : item row
+ *
+ * @var hiddenfield
+ * @var name
+ * @var code
+ * @var answer
+ * @var checkedState
+ * @var sCheckconditionFunction
+ * @var myfname
+ * @var sValue
+ **** Additional attributes:
+ * @var question_template_attribute.fix_width
+ * @var question_template_attribute.fix_height
+ * @var question_template_attribute.keep_aspect
+ * @var question_template_attribute.crop_or_resize
+ * @var question_template_attribute.horizontal_scroll
+ */
+#}
+
+{#<p>DEBUG:<br>
+question_template_attribute.fix_width           : {{question_template_attribute.fix_width}}<br/>
+question_template_attribute.fix_height          : {{question_template_attribute.fix_height}}<br/>
+question_template_attribute.keep_aspect         : {{question_template_attribute.keep_aspect}}<br/>
+question_template_attribute.crop_or_resize      : {{question_template_attribute.crop_or_resize}}<br/>
+question_template_attribute.horizontal_scroll   : {{question_template_attribute.horizontal_scroll}}<br/>
+</p>#}
+
+<!-- answer_row -->
+<div id='javatbd{{ name }}' class="form-group answer-item radio-item anwser-item">
+    <div class="row">
+        <!-- <li id="javatbd{{ myfname }}" class="button-item btn btn-primary {{ button_size_class }} {% if fChecked!='' %} active {% endif %}"> -->
+            <div class="form-group othertext-label-checkox-container radio-item">
+               <fieldset aria-label={{answer}} >
+               <input
+                    class="radio-input"
+                    type="radio"
+                    name="{{ name }}"
+                    id="answer{{ name }}{{ code }}"
+                    value={{ code }}
+                    {{ fChecked }}
+                />
+                    <label for="answer{{ name }}">
+                        <span class="" aria-hidden="true"></span> {{ answer }}
+                    </label>
+                </fieldset>
+            </div>
+    </div>
+</div>
+<!-- end of answer_row -->
