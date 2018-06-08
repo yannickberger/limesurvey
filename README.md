@@ -56,14 +56,15 @@ Pictures and the LimeSurvey Logo are registered trademarks of LimeSurvey GmbH, H
 
 # Installation
 
-##Composants nécéssaire
+## Composants nécéssaire
 Afin de pouvoir utiliser LimeSurvey il faut préalablement installer :
 - XAMPP (ou équivalent)
 https://www.apachefriends.org/fr/index.html
 - Composer (dependancy manager for PHP)
-- MySQL
+https://getcomposer.org/download/
+- MySQL (installé avec XAMPP)
 
-##Etapes
+## Etapes
 1. Installer XAMPP
 2. Installer Composer
 3. 
