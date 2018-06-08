@@ -50,3 +50,21 @@ for more information please refer to our [homepage](http://www.limesurvey.org), 
 LimeSurvey software is licenced under the [GPL 2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
 
 Pictures and the LimeSurvey Logo are registered trademarks of LimeSurvey GmbH, Hamburg, Germany.
+
+## Licence
+
+# Installation
+
+## Composants nécéssaire
+Afin de pouvoir utiliser LimeSurvey il faut préalablement installer :
+- XAMPP (ou équivalent)
+https://www.apachefriends.org/fr/index.html
+- Composer (dependancy manager for PHP)
+https://getcomposer.org/download/
+- MySQL (installé avec XAMPP)
+
+## Etapes
+1. Installer XAMPP
+2. Installer Composer
+3. 
+
