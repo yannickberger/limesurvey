@@ -74,7 +74,7 @@ https://getcomposer.org/download/
 
 ![Commande composer install](img/composer_install.png?raw=true "Commande composer install")
 
-5. Lancer XAMPP 
+5. Lancer XAMPP et lancer les services Apache et MySQL
 6. Ouvrir la console de phpmyadmin
 
 ![Ouvrir la console de phpmyadmin](img/phpmyadmin.png?raw=true "phpmyadmin console")
@@ -83,7 +83,10 @@ https://getcomposer.org/download/
 
 ![Importer la base de donnée MySQL](img/import_sql.png?raw=true "Importer limesurvey.sql")
 
-
+8. Lancer limesurvey en tapant dans votre url : http://localhost/limesurvey/admin
+9. Entrez les identifiants suivant :
+	login : root
+	Mot de passe : password
 
 
 
