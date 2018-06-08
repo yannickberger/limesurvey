@@ -64,7 +64,7 @@ https://getcomposer.org/download/
 - MySQL (installé avec XAMPP)
 
 ## Etapes
-1. Installer XAMPP
+1. Installer XAMPP (Apache + MySQL suffisent)
 2. Installer Composer
 3. Clone le repo "limesurvey" dane le dossier htdocs de votre install XAMPP
 
