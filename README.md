@@ -68,7 +68,19 @@ https://getcomposer.org/download/
 2. Installer Composer
 3. Clone le repo "limesurvey" dane le dossier htdocs de votre install XAMPP
 
-![Alt text](img/folders_xampp.png?raw=true "Folders organisation")
+![Structure du dossier de htdocs](img/folders_xampp.png?raw=true "Folders organisation")
+
+4. Lancer XAMPP et 
+5. Ouvrir la console de phpmyadmin
+
+![Ouvrir la console de phpmyadmin](img/phpmyadmin.png?raw=true "phpmyadmin console")
+
+6. Importer la base de donnée : limesurvey.sql
+
+![Importer la base de donnée MySQL](img/import_sql.png?raw=true "Importer limesurvey.sql")
+
+
+
 
 
 
