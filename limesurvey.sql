@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  ven. 08 juin 2018 à 14:41
+-- Généré le :  lun. 11 juin 2018 à 09:17
 -- Version du serveur :  10.1.32-MariaDB
 -- Version de PHP :  7.2.5
 
@@ -53,14 +53,20 @@ INSERT INTO `lime_answers` (`qid`, `code`, `answer`, `sortorder`, `assessment_va
 (27, 'A3', 'WCAG 2.0 - AAA', 3, 0, 'fr', 0),
 (27, 'A2', 'WCAG 2.0 - AA', 2, 0, 'fr', 0),
 (27, 'A1', 'WCAG 2.0 - A', 1, 0, 'fr', 0),
-(29, 'A4', 'Non-définis', 3, 0, 'fr', 0),
-(29, 'A3', 'Non', 2, 0, 'fr', 0),
 (29, 'A2', 'Oui', 1, 0, 'fr', 0),
+(29, 'A3', 'Non', 2, 0, 'fr', 0),
+(29, 'A4', 'Non-évaluable', 3, 0, 'fr', 0),
 (32, 'A3', 'Non', 2, 0, 'fr', 0),
 (32, 'A4', 'Non-définis', 3, 0, 'fr', 0),
 (33, 'A2', 'Oui', 1, 0, 'fr', 0),
 (33, 'A3', 'Non', 2, 0, 'fr', 0),
-(33, 'A4', 'Non-définis', 3, 0, 'fr', 0);
+(33, 'A4', 'Non-définis', 3, 0, 'fr', 0),
+(45, 'A1', 'Yes, more than 10', 1, 10, 'fr', 0),
+(45, 'A2', 'Yes, but less than 5 a day', 2, 5, 'fr', 0),
+(45, 'A3', 'No, I don\'t smoke at all', 3, 0, 'fr', 0),
+(46, 'A1', 'Yes, everyday', 1, 10, 'fr', 0),
+(46, 'A2', 'Yes, once a week', 2, 5, 'fr', 0),
+(46, 'A3', 'Yes, once a month', 3, 1, 'fr', 0);
 
 -- --------------------------------------------------------
 
@@ -79,6 +85,14 @@ CREATE TABLE `lime_assessments` (
   `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `language` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `lime_assessments`
+--
+
+INSERT INTO `lime_assessments` (`id`, `sid`, `scope`, `gid`, `name`, `minimum`, `maximum`, `message`, `language`) VALUES
+(1, 526745, 'T', 5, 'Be careful', '1', '11', 'You should start exercice', 'fr'),
+(2, 526745, 'T', 5, 'Healthy lifestyle', '12', '21', 'Such great composure !', 'fr');
 
 -- --------------------------------------------------------
 
@@ -196,7 +210,8 @@ CREATE TABLE `lime_groups` (
 INSERT INTO `lime_groups` (`gid`, `sid`, `group_name`, `group_order`, `description`, `language`, `randomization_group`, `grelevance`) VALUES
 (5, 526745, 'Principe : perceptible', 1, 'L\'information et les composants de l\'interface utilisateur doivent être présentés à l\'utilisateur de façon à ce qu\'il puisse les percevoir.', 'fr', '', ''),
 (4, 526745, 'Informations d\'audit', 0, 'Cette section a pour but de récolter de informations concernant l\'audit d\'accessibilité, tel que le site Web audité ou encore l\'auditeur.', 'fr', '', ''),
-(6, 526745, 'TEST', 2, 'TEST question group', 'fr', '', '');
+(6, 526745, 'TEST', 2, 'TEST question group', 'fr', '', ''),
+(7, 526745, 'Assesments test', 3, '', 'fr', '', '');
 
 -- --------------------------------------------------------
 
@@ -214,6 +229,15 @@ CREATE TABLE `lime_labels` (
   `assessment_value` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Déchargement des données de la table `lime_labels`
+--
+
+INSERT INTO `lime_labels` (`id`, `lid`, `code`, `title`, `sortorder`, `language`, `assessment_value`) VALUES
+(15, 1, 'L001', 'A', 0, 'fr', 1),
+(16, 1, 'L002', 'AA', 1, 'fr', 2),
+(17, 1, 'L003', 'AAA', 2, 'fr', 3);
+
 -- --------------------------------------------------------
 
 --
@@ -225,6 +249,13 @@ CREATE TABLE `lime_labelsets` (
   `label_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `languages` varchar(200) COLLATE utf8mb4_unicode_ci DEFAULT 'en'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `lime_labelsets`
+--
+
+INSERT INTO `lime_labelsets` (`lid`, `label_name`, `languages`) VALUES
+(1, 'WCAG', 'fr');
 
 -- --------------------------------------------------------
 
@@ -447,11 +478,11 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (36, 28, 526745, 4, 'T', 'SQ004', 'Google Chrome', NULL, NULL, 'N', 'N', 3, 'fr', 0, 0, '1', ''),
 (35, 28, 526745, 4, 'T', 'SQ003', 'Mozilla Firefox', NULL, NULL, 'N', 'N', 2, 'fr', 0, 0, '1', ''),
 (34, 28, 526745, 4, 'T', 'SQ002', 'Microsoft Edge', NULL, NULL, 'N', 'N', 1, 'fr', 0, 0, '1', ''),
-(33, 0, 526745, 5, 'L', 'ContenuNonTextuelD', 'Aucun CAPTCHA n\'a été utilisé, ou alors un équivalent textuel a été prévu.<br>\n-A-', '', '', 'N', 'N', 4, 'fr', 0, 0, 'A', ''),
-(32, 0, 526745, 6, 'L', 'array', 'test this', '', '', 'N', 'N', 1, 'fr', 0, 0, '1', ''),
-(31, 0, 526745, 5, 'L', 'ContenuNonTextuelC', 'Toute image décorative utilisé pour la mise en page est assortie d\'un attribut alt vide ou est masquée de manière à être compatible avec les technologies d\'assistance (p. ex un lecteur d\'écran).<br>\n\n-A-', '', '', 'N', 'N', 3, 'fr', 0, 0, 'A', ''),
-(30, 0, 526745, 5, 'L', 'ContenuNonTextuelB', 'Lorsque l\'équivalent textuel ne suffit pas, un descriptif est fourni avec mention dans l\'équivalent textuel.<br>\n-A-', '', '', 'N', 'N', 2, 'fr', 0, 0, 'A', ''),
-(29, 0, 526745, 5, 'L', 'ContenuNonTextuelA', 'Tout contenu non textuel, tel qu\'une image, un graphique, un objet, un bouton dans un formulaire ou une zone active dans un menu graphique ergonomique, est remplacé par un équivalent textuel.<br>\n-A-', '', '', 'N', 'N', 1, 'fr', 0, 0, 'A', ''),
+(33, 0, 526745, 5, 'L', 'ContenuNonTextuelD', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si un CAPTCHA a été utilisé, est-ce qu’un équivalent textuel a été prévu ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 3, 'fr', 0, 0, '', ''),
+(32, 0, 526745, 6, 'L', 'array', 'test this', '', '', 'N', 'Y', 0, 'fr', 0, 0, '1', ''),
+(31, 0, 526745, 5, 'L', 'ContenuNonTextuelC', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que toute image décorative utilisée pour la mise en page est assortie d’un attribut alt vide ou est masquée de manière à être compatible avec les technologies d’assistance (p. ex. lecteur d’écran) ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 2, 'fr', 0, 0, '', ''),
+(30, 0, 526745, 5, 'L', 'ContenuNonTextuelB', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si cet équivalent textuel ne suffit pas, est-ce qu’un descriptif est fourni ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 1, 'fr', 0, 0, '', ''),
+(29, 0, 526745, 5, 'L', 'ContenuNonTextuelA', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tout contenu non textuel, tel qu’une image, un graphique, un objet, un bouton dans un formulaire ou une zone active dans un menu graphique ergonomique, est remplacé par un équivalent textuel ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 0, 'fr', 0, 0, '', ''),
 (28, 0, 526745, 4, 'M', 'outilaudit', 'Outils utilisées :', '', '', 'N', 'N', 4, 'fr', 0, 0, '1', ''),
 (27, 0, 526745, 4, '!', 'niveauconformite', 'Niveau de conformité souhaité :', '', '', 'N', 'N', 5, 'fr', 0, 0, '1', ''),
 (26, 0, 526745, 4, 'D', 'dateaudit', 'Date de l\'audit :', '', '', 'N', 'N', 3, 'fr', 0, 0, '1', ''),
@@ -460,7 +491,9 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (23, 0, 526745, 4, 'S', 'site', 'URL du site web audité', '', '', 'N', 'N', 0, 'fr', 0, 0, '1', ''),
 (37, 28, 526745, 4, 'T', 'SQ005', 'Safari', NULL, NULL, 'N', 'N', 4, 'fr', 0, 0, '1', ''),
 (38, 28, 526745, 4, 'T', 'SQ006', 'Opera', NULL, NULL, 'N', 'N', 5, 'fr', 0, 0, '1', ''),
-(39, 28, 526745, 4, 'T', 'SQ007', '', NULL, NULL, 'N', 'N', 6, 'fr', 0, 0, '1', '');
+(39, 28, 526745, 4, 'T', 'SQ007', '', NULL, NULL, 'N', 'N', 6, 'fr', 0, 0, '1', ''),
+(46, 0, 526745, 7, 'L', 'astest2', 'Do you exercice ?', '', '', 'N', 'N', 1, 'fr', 0, 0, '1', NULL),
+(45, 0, 526745, 7, 'L', 'astest1', 'Do you smoke ?', '', '', 'N', 'N', 0, 'fr', 0, 0, '1', NULL);
 
 -- --------------------------------------------------------
 
@@ -481,11 +514,13 @@ CREATE TABLE `lime_question_attributes` (
 --
 
 INSERT INTO `lime_question_attributes` (`qaid`, `qid`, `attribute`, `value`, `language`) VALUES
-(8, 33, 'question_template', 'radio_accessible', NULL),
-(7, 31, 'question_template', 'radio_accessible', NULL),
-(6, 30, 'question_template', 'radio_accessible', NULL),
-(5, 29, 'question_template', 'radio_accessible', NULL),
-(9, 32, 'question_template', 'radio_accessible', NULL);
+(27, 33, 'question_template', 'radio_accessible', NULL),
+(26, 31, 'question_template', 'radio_accessible', NULL),
+(25, 30, 'question_template', 'radio_accessible', NULL),
+(24, 29, 'question_template', 'radio_accessible', NULL),
+(16, 32, 'question_template', 'radio_accessible', NULL),
+(17, 45, 'question_template', 'radio_accessible', NULL),
+(18, 46, 'question_template', 'radio_accessible', NULL);
 
 -- --------------------------------------------------------
 
@@ -590,11 +625,11 @@ INSERT INTO `lime_settings_global` (`stg_name`, `stg_value`) VALUES
 ('defaultlang', 'en'),
 ('AssetsVersion', '30033'),
 ('last_survey_1', '526745'),
-('last_question_1', '32'),
+('last_question_1', '33'),
 ('last_question_sid_1', '526745'),
-('last_question_gid_1', '6'),
-('last_question_1_526745', '32'),
-('last_question_1_526745_gid', '6'),
+('last_question_gid_1', '5'),
+('last_question_1_526745', '33'),
+('last_question_1_526745_gid', '5'),
 ('admintheme', 'Bay_of_Many');
 
 -- --------------------------------------------------------
@@ -799,7 +834,7 @@ CREATE TABLE `lime_surveys` (
 --
 
 INSERT INTO `lime_surveys` (`sid`, `owner_id`, `gsid`, `admin`, `active`, `expires`, `startdate`, `adminemail`, `anonymized`, `faxto`, `format`, `savetimings`, `template`, `language`, `additional_languages`, `datestamp`, `usecookie`, `allowregister`, `allowsave`, `autonumber_start`, `autoredirect`, `allowprev`, `printanswers`, `ipaddr`, `refurl`, `datecreated`, `showsurveypolicynotice`, `publicstatistics`, `publicgraphs`, `listpublic`, `htmlemail`, `sendconfirmation`, `tokenanswerspersistence`, `assessments`, `usecaptcha`, `usetokens`, `bounce_email`, `attributedescriptions`, `emailresponseto`, `emailnotificationto`, `tokenlength`, `showxquestions`, `showgroupinfo`, `shownoanswer`, `showqnumcode`, `bouncetime`, `bounceprocessing`, `bounceaccounttype`, `bounceaccounthost`, `bounceaccountpass`, `bounceaccountencryption`, `bounceaccountuser`, `showwelcome`, `showprogress`, `questionindex`, `navigationdelay`, `nokeyboard`, `alloweditaftercompletion`, `googleanalyticsstyle`, `googleanalyticsapikey`) VALUES
-(526745, 1, 1, '', 'N', NULL, NULL, '', 'N', '', 'G', 'N', 'heg', 'fr', '', 'N', 'N', 'N', 'Y', 0, 'N', 'N', 'N', 'N', 'N', '2018-06-08 12:02:25', 0, 'N', 'N', 'N', 'Y', 'Y', 'N', 'N', 'N', 'N', '', NULL, '', '', 15, 'Y', 'B', 'N', 'X', NULL, 'N', NULL, NULL, NULL, NULL, NULL, 'Y', 'Y', 0, 0, 'N', 'N', NULL, NULL);
+(526745, 1, 1, '', 'N', NULL, NULL, '', 'N', '', 'G', 'N', 'heg', 'fr', '', 'N', 'N', 'N', 'Y', 0, 'N', 'N', 'N', 'N', 'N', '2018-06-08 12:02:25', 0, 'N', 'N', 'N', 'Y', 'Y', 'N', 'Y', 'N', 'N', '', NULL, '', '', 15, 'Y', 'B', 'Y', 'X', NULL, 'N', NULL, NULL, NULL, NULL, NULL, 'Y', 'Y', 0, 0, 'N', 'N', '', '');
 
 -- --------------------------------------------------------
 
@@ -972,7 +1007,7 @@ INSERT INTO `lime_template_configuration` (`id`, `template_name`, `sid`, `gsid`,
 (4, 'fruity', 526745, NULL, NULL, 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', NULL, NULL),
 (5, 'fruity', NULL, 1, NULL, 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', NULL, NULL),
 (6, 'heg', NULL, NULL, NULL, '{\"add\":[\"css\\/base.css\",\"css\\/ajaxify.css\",\"css\\/theme.css\",\"css\\/custom.css\"]}', '{\"add\":[\"scripts\\/theme.js\",\"scripts\\/ajaxify.js\",\"scripts\\/custom.js\"]}', '{\"add\":[\"css\\/print_theme.css\"]}', '{\"ajaxmode\":\"on\",\"animatebody\":\"off\",\"container\":\"on\",\"bodyanimation\":\"fadeInRight\",\"brandlogo\":\"on\",\"brandlogofile\":\".\\/files\\/logo.png\",\"font\":\"noto\"}', 'bootstrap', '{}', '[]', '{\"add\":[\"pjax\",\"moment\",\"font-noto\"]}', NULL, NULL),
-(7, 'heg', 526745, NULL, NULL, 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', NULL, NULL),
+(7, 'heg', 526745, NULL, NULL, 'inherit', 'inherit', 'inherit', '{\"font\":\"inherit\",\"brandlogofile\":\"/files/GES-logo-blanc.png\",\"ajaxmode\":\"inherit\",\"container\":\"inherit\",\"brandlogo\":\"on\"}', 'inherit', 'inherit', 'inherit', 'inherit', NULL, NULL),
 (8, 'heg', NULL, 1, NULL, 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', 'inherit', NULL, NULL);
 
 -- --------------------------------------------------------
@@ -1414,7 +1449,7 @@ ALTER TABLE `lime_user_in_groups`
 -- AUTO_INCREMENT pour la table `lime_assessments`
 --
 ALTER TABLE `lime_assessments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `lime_boxes`
@@ -1444,25 +1479,25 @@ ALTER TABLE `lime_failed_login_attempts`
 -- AUTO_INCREMENT pour la table `lime_groups`
 --
 ALTER TABLE `lime_groups`
-  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT pour la table `lime_labels`
 --
 ALTER TABLE `lime_labels`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT pour la table `lime_labelsets`
 --
 ALTER TABLE `lime_labelsets`
-  MODIFY `lid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `lid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `lime_notifications`
 --
 ALTER TABLE `lime_notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `lime_participant_attribute_names`
@@ -1498,13 +1533,13 @@ ALTER TABLE `lime_plugin_settings`
 -- AUTO_INCREMENT pour la table `lime_questions`
 --
 ALTER TABLE `lime_questions`
-  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT pour la table `lime_question_attributes`
 --
 ALTER TABLE `lime_question_attributes`
-  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT pour la table `lime_quota`
