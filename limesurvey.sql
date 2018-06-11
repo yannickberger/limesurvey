@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  lun. 11 juin 2018 à 09:17
+-- Généré le :  lun. 11 juin 2018 à 11:29
 -- Version du serveur :  10.1.32-MariaDB
 -- Version de PHP :  7.2.5
 
@@ -43,30 +43,84 @@ CREATE TABLE `lime_answers` (
 --
 
 INSERT INTO `lime_answers` (`qid`, `code`, `answer`, `sortorder`, `assessment_value`, `language`, `scale_id`) VALUES
-(31, 'A3', 'Non', 2, 0, 'fr', 0),
-(31, 'A2', 'Oui', 1, 0, 'fr', 0),
-(30, 'A4', 'Non-définis', 3, 0, 'fr', 0),
-(32, 'A2', 'Oui', 1, 0, 'fr', 0),
-(31, 'A4', 'Non-définis', 3, 0, 'fr', 0),
-(30, 'A3', 'Non', 2, 0, 'fr', 0),
-(30, 'A2', 'Oui', 1, 0, 'fr', 0),
+(31, 'A2', 'Non', 2, 0, 'fr', 0),
+(30, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(47, 'A1', 'Oui', 1, 1, 'fr', 0),
+(31, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(30, 'A2', 'Non', 2, 0, 'fr', 0),
 (27, 'A3', 'WCAG 2.0 - AAA', 3, 0, 'fr', 0),
 (27, 'A2', 'WCAG 2.0 - AA', 2, 0, 'fr', 0),
 (27, 'A1', 'WCAG 2.0 - A', 1, 0, 'fr', 0),
-(29, 'A2', 'Oui', 1, 0, 'fr', 0),
-(29, 'A3', 'Non', 2, 0, 'fr', 0),
-(29, 'A4', 'Non-évaluable', 3, 0, 'fr', 0),
-(32, 'A3', 'Non', 2, 0, 'fr', 0),
-(32, 'A4', 'Non-définis', 3, 0, 'fr', 0),
-(33, 'A2', 'Oui', 1, 0, 'fr', 0),
-(33, 'A3', 'Non', 2, 0, 'fr', 0),
-(33, 'A4', 'Non-définis', 3, 0, 'fr', 0),
+(29, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(47, 'A2', 'Non', 2, 0, 'fr', 0),
+(33, 'A2', 'Non', 2, 0, 'fr', 0),
 (45, 'A1', 'Yes, more than 10', 1, 10, 'fr', 0),
 (45, 'A2', 'Yes, but less than 5 a day', 2, 5, 'fr', 0),
 (45, 'A3', 'No, I don\'t smoke at all', 3, 0, 'fr', 0),
 (46, 'A1', 'Yes, everyday', 1, 10, 'fr', 0),
 (46, 'A2', 'Yes, once a week', 2, 5, 'fr', 0),
-(46, 'A3', 'Yes, once a month', 3, 1, 'fr', 0);
+(46, 'A3', 'Yes, once a month', 3, 1, 'fr', 0),
+(29, 'A2', 'Non', 2, 0, 'fr', 0),
+(47, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(48, 'A2', 'Non', 2, 0, 'fr', 0),
+(30, 'A1', 'Oui', 1, 1, 'fr', 0),
+(31, 'A1', 'Oui', 1, 1, 'fr', 0),
+(33, 'A1', 'Oui', 1, 1, 'fr', 0),
+(48, 'A1', 'Oui', 1, 1, 'fr', 0),
+(49, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(49, 'A2', 'Non', 2, 0, 'fr', 0),
+(49, 'A1', 'Oui', 1, 1, 'fr', 0),
+(50, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(50, 'A2', 'Non', 2, 0, 'fr', 0),
+(50, 'A1', 'Oui', 1, 1, 'fr', 0),
+(51, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(51, 'A2', 'Non', 2, 0, 'fr', 0),
+(51, 'A1', 'Oui', 1, 1, 'fr', 0),
+(52, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(52, 'A2', 'Non', 2, 0, 'fr', 0),
+(52, 'A1', 'Oui', 1, 1, 'fr', 0),
+(53, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(53, 'A2', 'Non', 2, 0, 'fr', 0),
+(53, 'A1', 'Oui', 1, 1, 'fr', 0),
+(54, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(54, 'A2', 'Non', 2, 0, 'fr', 0),
+(54, 'A1', 'Oui', 1, 1, 'fr', 0),
+(55, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(55, 'A2', 'Non', 2, 0, 'fr', 0),
+(55, 'A1', 'Oui', 1, 1, 'fr', 0),
+(56, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(56, 'A2', 'Non', 2, 0, 'fr', 0),
+(56, 'A1', 'Oui', 1, 1, 'fr', 0),
+(57, 'A2', 'Non', 2, 0, 'fr', 0),
+(57, 'A1', 'Oui', 1, 1, 'fr', 0),
+(58, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(58, 'A2', 'Non', 2, 0, 'fr', 0),
+(58, 'A1', 'Oui', 1, 1, 'fr', 0),
+(59, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(59, 'A2', 'Non', 2, 0, 'fr', 0),
+(59, 'A1', 'Oui', 1, 1, 'fr', 0),
+(60, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(60, 'A2', 'Non', 2, 0, 'fr', 0),
+(60, 'A1', 'Oui', 1, 1, 'fr', 0),
+(61, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(61, 'A2', 'Non', 2, 0, 'fr', 0),
+(61, 'A1', 'Oui', 1, 1, 'fr', 0),
+(62, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(62, 'A2', 'Non', 2, 0, 'fr', 0),
+(62, 'A1', 'Oui', 1, 1, 'fr', 0),
+(63, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(63, 'A2', 'Non', 2, 0, 'fr', 0),
+(63, 'A1', 'Oui', 1, 1, 'fr', 0),
+(64, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(64, 'A2', 'Non', 2, 0, 'fr', 0),
+(64, 'A1', 'Oui', 1, 1, 'fr', 0),
+(65, 'A1', 'Oui', 1, 0, 'fr', 0),
+(65, 'A2', 'Non', 2, 0, 'fr', 0),
+(65, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(29, 'A1', 'Oui', 1, 1, 'fr', 0),
+(33, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(48, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(57, 'A3', 'Non-évaluable', 3, 0, 'fr', 0);
 
 -- --------------------------------------------------------
 
@@ -91,8 +145,9 @@ CREATE TABLE `lime_assessments` (
 --
 
 INSERT INTO `lime_assessments` (`id`, `sid`, `scope`, `gid`, `name`, `minimum`, `maximum`, `message`, `language`) VALUES
-(1, 526745, 'T', 5, 'Be careful', '1', '11', 'You should start exercice', 'fr'),
-(2, 526745, 'T', 5, 'Healthy lifestyle', '12', '21', 'Such great composure !', 'fr');
+(3, 526745, 'G', 5, 'Perceptible : évaluation d\'accessibilité', '1', '22', 'Un total de <b>{TOTAL}</b> critères ont été validé sur les 22 critères audité.', 'fr'),
+(9, 526745, '0', 5, '', '0', '0', '', 'fr'),
+(8, 526745, '0', 5, '', '0', '0', '', 'fr');
 
 -- --------------------------------------------------------
 
@@ -210,7 +265,7 @@ CREATE TABLE `lime_groups` (
 INSERT INTO `lime_groups` (`gid`, `sid`, `group_name`, `group_order`, `description`, `language`, `randomization_group`, `grelevance`) VALUES
 (5, 526745, 'Principe : perceptible', 1, 'L\'information et les composants de l\'interface utilisateur doivent être présentés à l\'utilisateur de façon à ce qu\'il puisse les percevoir.', 'fr', '', ''),
 (4, 526745, 'Informations d\'audit', 0, 'Cette section a pour but de récolter de informations concernant l\'audit d\'accessibilité, tel que le site Web audité ou encore l\'auditeur.', 'fr', '', ''),
-(6, 526745, 'TEST', 2, 'TEST question group', 'fr', '', ''),
+(8, 526745, 'Principe : utilisable', 2, '', 'fr', '', ''),
 (7, 526745, 'Assesments test', 3, '', 'fr', '', '');
 
 -- --------------------------------------------------------
@@ -236,7 +291,10 @@ CREATE TABLE `lime_labels` (
 INSERT INTO `lime_labels` (`id`, `lid`, `code`, `title`, `sortorder`, `language`, `assessment_value`) VALUES
 (15, 1, 'L001', 'A', 0, 'fr', 1),
 (16, 1, 'L002', 'AA', 1, 'fr', 2),
-(17, 1, 'L003', 'AAA', 2, 'fr', 3);
+(17, 1, 'L003', 'AAA', 2, 'fr', 3),
+(23, 2, 'A3', 'Non-évaluable', 2, 'fr', 0),
+(22, 2, 'A2', 'Non', 1, 'fr', 0),
+(21, 2, 'A1', 'Oui', 0, 'fr', 1);
 
 -- --------------------------------------------------------
 
@@ -255,7 +313,8 @@ CREATE TABLE `lime_labelsets` (
 --
 
 INSERT INTO `lime_labelsets` (`lid`, `label_name`, `languages`) VALUES
-(1, 'WCAG', 'fr');
+(1, 'WCAG', 'fr'),
+(2, 'o-n-ne', 'fr');
 
 -- --------------------------------------------------------
 
@@ -479,7 +538,7 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (35, 28, 526745, 4, 'T', 'SQ003', 'Mozilla Firefox', NULL, NULL, 'N', 'N', 2, 'fr', 0, 0, '1', ''),
 (34, 28, 526745, 4, 'T', 'SQ002', 'Microsoft Edge', NULL, NULL, 'N', 'N', 1, 'fr', 0, 0, '1', ''),
 (33, 0, 526745, 5, 'L', 'ContenuNonTextuelD', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si un CAPTCHA a été utilisé, est-ce qu’un équivalent textuel a été prévu ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 3, 'fr', 0, 0, '', ''),
-(32, 0, 526745, 6, 'L', 'array', 'test this', '', '', 'N', 'Y', 0, 'fr', 0, 0, '1', ''),
+(47, 0, 526745, 5, 'L', 'AdaptableA', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les titres indiquent la structure du document ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 4, 'fr', 0, 0, '1', ''),
 (31, 0, 526745, 5, 'L', 'ContenuNonTextuelC', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que toute image décorative utilisée pour la mise en page est assortie d’un attribut alt vide ou est masquée de manière à être compatible avec les technologies d’assistance (p. ex. lecteur d’écran) ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 2, 'fr', 0, 0, '', ''),
 (30, 0, 526745, 5, 'L', 'ContenuNonTextuelB', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si cet équivalent textuel ne suffit pas, est-ce qu’un descriptif est fourni ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 1, 'fr', 0, 0, '', ''),
 (29, 0, 526745, 5, 'L', 'ContenuNonTextuelA', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tout contenu non textuel, tel qu’une image, un graphique, un objet, un bouton dans un formulaire ou une zone active dans un menu graphique ergonomique, est remplacé par un équivalent textuel ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 0, 'fr', 0, 0, '', ''),
@@ -493,7 +552,25 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (38, 28, 526745, 4, 'T', 'SQ006', 'Opera', NULL, NULL, 'N', 'N', 5, 'fr', 0, 0, '1', ''),
 (39, 28, 526745, 4, 'T', 'SQ007', '', NULL, NULL, 'N', 'N', 6, 'fr', 0, 0, '1', ''),
 (46, 0, 526745, 7, 'L', 'astest2', 'Do you exercice ?', '', '', 'N', 'N', 1, 'fr', 0, 0, '1', NULL),
-(45, 0, 526745, 7, 'L', 'astest1', 'Do you smoke ?', '', '', 'N', 'N', 0, 'fr', 0, 0, '1', NULL);
+(45, 0, 526745, 7, 'L', 'astest1', 'Do you smoke ?', '', '', 'N', 'N', 0, 'fr', 0, 0, '1', NULL),
+(48, 0, 526745, 5, 'L', 'AdaptableB', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les titres sont marqués en HTML (p. ex. h1, h2, h6) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 5, 'fr', 0, 0, '1', ''),
+(49, 0, 526745, 5, 'L', 'AdaptableC', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les listes sont balisées en tant que listes (ul, ol, dl) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 6, 'fr', 0, 0, '1', ''),
+(50, 0, 526745, 5, 'L', 'AdaptableD', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les formulaires en plusieurs parties contiennent des blocs d’information cohérents ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 7, 'fr', 0, 0, '1', NULL),
+(51, 0, 526745, 5, 'L', 'AdaptableE', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les labels sont associés aux champs de saisies dans les formulaires ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 8, 'fr', 0, 0, '1', NULL),
+(52, 0, 526745, 5, 'L', 'AdaptableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le texte est formaté avec un balisage sémantiquement correct ? Par exemple : les citations sont balisées avec <cite>. <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 9, 'fr', 0, 0, '1', NULL),
+(53, 0, 526745, 5, 'L', 'AdaptableG', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque les CSS sont désactivées, est-ce que le contenu de la page suit un ordre logique ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 10, 'fr', 0, 0, '1', ''),
+(54, 0, 526745, 5, 'L', 'AdaptableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’avec l’utilisation des CSS, le contenu textuel est correct (il n’y a pas d’espaces insécables ou d’espaces blancs) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 11, 'fr', 0, 0, '1', ''),
+(55, 0, 526745, 5, 'L', 'AdaptableI', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le positionnement des contenus à l’aide des CSS pour garantir la compréhension du texte est correct ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 12, 'fr', 0, 0, '1', ''),
+(56, 0, 526745, 5, 'L', 'AdaptableJ', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’il y a des instructions uniquement visuelles ou acoustiques, telles que « veuillez actionner le bouton vert à gauche » ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 13, 'fr', 0, 0, '1', ''),
+(57, 0, 526745, 5, 'L', 'DistinguableA', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’information est uniquement véhiculée par la couleur </span></span></span>?', '', '', 'N', 'Y', 14, 'fr', 0, 0, '1', NULL),
+(58, 0, 526745, 5, 'L', 'DistinguableB', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque seule la couleur permet de distinguer p. ex. un hyperlien du texte environnant, est-ce que l’hyperlien présente un rapport de contraste de 3:1 ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 15, 'fr', 0, 0, '1', NULL),
+(59, 0, 526745, 5, 'L', 'DistinguableC', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan est d’au moins 4,5:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 16, 'fr', 0, 0, '1', ''),
+(60, 0, 526745, 5, 'L', 'DistinguableD', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture en grands caractères (minimum 18 pt ou 14 pt + gras) et celle de l’arrière-plan est d’au moins 3:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 17, 'fr', 0, 0, '1', ''),
+(61, 0, 526745, 5, 'L', 'DistinguableE', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tous les textes et instructions, ainsi que les bordures de champs et les textes des graphiques respectent le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan ?</span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Font exception les logos, les noms d’entreprise et les textes purement décoratifs. </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 18, 'fr', 0, 0, '1', ''),
+(64, 0, 526745, 5, 'L', 'DistinguableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que la présentation visuelle est essentielle pour la compréhension du message ? On songe ici à des logos et à des noms de marque. Ces contenus peuvent être assortis d’attributs alt et title. </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 21, 'fr', 0, 0, '1', NULL),
+(62, 0, 526745, 5, 'L', 'DistinguableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que dans les CSS, la taille des caractères est définie en % ou en em ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 19, 'fr', 0, 0, '1', ''),
+(63, 0, 526745, 5, 'L', 'DistinguableG', '<p align=\"left\" style=\"margin-bottom:.0001pt; text-align:left; margin:0cm 0cm 12pt\"><span style=\"font-size:10pt\"><span style=\"line-height:normal\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Le contenu est présenté sous forme de texte plutôt que sous forme d’image, sauf dans les cas suivants:<br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’image du texte peut être adaptée aux besoins du lecteur et est lisible sans CSS ? <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 20, 'fr', 0, 0, '1', NULL),
+(65, 0, 526745, 8, 'L', 'ClavierA', '<p align=\"left\" style=\"text-align:left; margin:0cm 0cm 12pt\"><span style=\"font-size:10pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">La partie ci-dessous traite de l’accessibilité au clavier (touche TAB). <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tous les éléments et les fonctionnalités régissant les pages sont accessibles au clavier ? <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 1, 'fr', 0, 0, '1', NULL);
 
 -- --------------------------------------------------------
 
@@ -518,9 +595,27 @@ INSERT INTO `lime_question_attributes` (`qaid`, `qid`, `attribute`, `value`, `la
 (26, 31, 'question_template', 'radio_accessible', NULL),
 (25, 30, 'question_template', 'radio_accessible', NULL),
 (24, 29, 'question_template', 'radio_accessible', NULL),
-(16, 32, 'question_template', 'radio_accessible', NULL),
+(28, 47, 'question_template', 'radio_accessible', NULL),
 (17, 45, 'question_template', 'radio_accessible', NULL),
-(18, 46, 'question_template', 'radio_accessible', NULL);
+(18, 46, 'question_template', 'radio_accessible', NULL),
+(30, 48, 'question_template', 'radio_accessible', NULL),
+(32, 49, 'question_template', 'radio_accessible', NULL),
+(33, 50, 'question_template', 'radio_accessible', NULL),
+(34, 51, 'question_template', 'radio_accessible', NULL),
+(35, 52, 'question_template', 'radio_accessible', NULL),
+(40, 53, 'question_template', 'radio_accessible', NULL),
+(41, 54, 'question_template', 'radio_accessible', NULL),
+(42, 55, 'question_template', 'radio_accessible', NULL),
+(43, 56, 'question_template', 'radio_accessible', NULL),
+(44, 57, 'question_template', 'radio_accessible', NULL),
+(45, 58, 'question_template', 'radio_accessible', NULL),
+(52, 59, 'question_template', 'radio_accessible', NULL),
+(53, 60, 'question_template', 'radio_accessible', NULL),
+(54, 61, 'question_template', 'radio_accessible', NULL),
+(55, 62, 'question_template', 'radio_accessible', NULL),
+(51, 63, 'question_template', 'radio_accessible', NULL),
+(56, 64, 'question_template', 'radio_accessible', NULL),
+(57, 65, 'question_template', 'radio_accessible', NULL);
 
 -- --------------------------------------------------------
 
@@ -625,10 +720,10 @@ INSERT INTO `lime_settings_global` (`stg_name`, `stg_value`) VALUES
 ('defaultlang', 'en'),
 ('AssetsVersion', '30033'),
 ('last_survey_1', '526745'),
-('last_question_1', '33'),
+('last_question_1', '29'),
 ('last_question_sid_1', '526745'),
 ('last_question_gid_1', '5'),
-('last_question_1_526745', '33'),
+('last_question_1_526745', '29'),
 ('last_question_1_526745_gid', '5'),
 ('admintheme', 'Bay_of_Many');
 
@@ -1449,7 +1544,7 @@ ALTER TABLE `lime_user_in_groups`
 -- AUTO_INCREMENT pour la table `lime_assessments`
 --
 ALTER TABLE `lime_assessments`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `lime_boxes`
@@ -1479,25 +1574,25 @@ ALTER TABLE `lime_failed_login_attempts`
 -- AUTO_INCREMENT pour la table `lime_groups`
 --
 ALTER TABLE `lime_groups`
-  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT pour la table `lime_labels`
 --
 ALTER TABLE `lime_labels`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT pour la table `lime_labelsets`
 --
 ALTER TABLE `lime_labelsets`
-  MODIFY `lid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `lid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT pour la table `lime_notifications`
 --
 ALTER TABLE `lime_notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pour la table `lime_participant_attribute_names`
@@ -1533,13 +1628,13 @@ ALTER TABLE `lime_plugin_settings`
 -- AUTO_INCREMENT pour la table `lime_questions`
 --
 ALTER TABLE `lime_questions`
-  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT pour la table `lime_question_attributes`
 --
 ALTER TABLE `lime_question_attributes`
-  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT pour la table `lime_quota`
