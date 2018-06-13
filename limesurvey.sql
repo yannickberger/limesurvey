@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mar. 12 juin 2018 à 10:57
+-- Généré le :  mer. 13 juin 2018 à 17:50
 -- Version du serveur :  10.1.32-MariaDB
 -- Version de PHP :  7.2.5
 
@@ -48,18 +48,20 @@ INSERT INTO `lime_answers` (`qid`, `code`, `answer`, `sortorder`, `assessment_va
 (47, 'A1', 'Oui', 1, 1, 'fr', 0),
 (31, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
 (30, 'A2', 'Non', 2, 0, 'fr', 0),
-(27, 'A3', 'WCAG 2.0 - AAA', 3, 0, 'fr', 0),
-(27, 'A2', 'WCAG 2.0 - AA', 2, 0, 'fr', 0),
-(27, 'A1', 'WCAG 2.0 - A', 1, 0, 'fr', 0),
+(70, 'A1', 'Oui', 1, 1, 'fr', 0),
+(70, 'A2', 'Non', 2, 0, 'fr', 0),
+(70, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(71, 'A1', 'Oui', 1, 1, 'fr', 0),
 (29, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
 (47, 'A2', 'Non', 2, 0, 'fr', 0),
 (33, 'A2', 'Non', 2, 0, 'fr', 0),
-(45, 'A1', 'Yes, more than 10', 1, 10, 'fr', 0),
-(45, 'A2', 'Yes, but less than 5 a day', 2, 5, 'fr', 0),
-(45, 'A3', 'No, I don\'t smoke at all', 3, 0, 'fr', 0),
-(46, 'A1', 'Yes, everyday', 1, 10, 'fr', 0),
-(46, 'A2', 'Yes, once a week', 2, 5, 'fr', 0),
-(46, 'A3', 'Yes, once a month', 3, 1, 'fr', 0),
+(74, 'A1', 'Oui', 1, 1, 'fr', 0),
+(73, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(73, 'A2', 'Non', 2, 0, 'fr', 0),
+(73, 'A1', 'Oui', 1, 1, 'fr', 0),
+(72, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(72, 'A2', 'Non', 2, 0, 'fr', 0),
+(72, 'A1', 'Oui', 1, 1, 'fr', 0),
 (29, 'A2', 'Non', 2, 0, 'fr', 0),
 (47, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
 (48, 'A2', 'Non', 2, 0, 'fr', 0),
@@ -114,13 +116,32 @@ INSERT INTO `lime_answers` (`qid`, `code`, `answer`, `sortorder`, `assessment_va
 (64, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
 (64, 'A2', 'Non', 2, 0, 'fr', 0),
 (64, 'A1', 'Oui', 1, 1, 'fr', 0),
-(65, 'A1', 'Oui', 1, 0, 'fr', 0),
-(65, 'A2', 'Non', 2, 0, 'fr', 0),
-(65, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(71, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(71, 'A2', 'Non', 2, 0, 'fr', 0),
 (29, 'A1', 'Oui', 1, 1, 'fr', 0),
 (33, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
 (48, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
-(57, 'A3', 'Non-évaluable', 3, 0, 'fr', 0);
+(57, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(74, 'A2', 'Non', 2, 0, 'fr', 0),
+(74, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(75, 'A1', 'Oui', 1, 1, 'fr', 0),
+(75, 'A2', 'Non', 2, 0, 'fr', 0),
+(75, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(76, 'A1', 'Oui', 1, 1, 'fr', 0),
+(76, 'A2', 'Non', 2, 0, 'fr', 0),
+(76, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(77, 'A1', 'Oui', 1, 1, 'fr', 0),
+(77, 'A2', 'Non', 2, 0, 'fr', 0),
+(77, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(78, 'A1', 'Oui', 1, 1, 'fr', 0),
+(78, 'A2', 'Non', 2, 0, 'fr', 0),
+(78, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(79, 'A1', 'Oui', 1, 1, 'fr', 0),
+(79, 'A2', 'Non', 2, 0, 'fr', 0),
+(79, 'A3', 'Non-évaluable', 3, 0, 'fr', 0),
+(80, 'A1', 'Oui', 1, 1, 'fr', 0),
+(80, 'A2', 'Non', 2, 0, 'fr', 0),
+(80, 'A3', 'Non-évaluable', 3, 0, 'fr', 0);
 
 -- --------------------------------------------------------
 
@@ -139,15 +160,6 @@ CREATE TABLE `lime_assessments` (
   `message` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `language` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'en'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `lime_assessments`
---
-
-INSERT INTO `lime_assessments` (`id`, `sid`, `scope`, `gid`, `name`, `minimum`, `maximum`, `message`, `language`) VALUES
-(3, 526745, 'G', 5, 'Perceptible : évaluation d\'accessibilité', '1', '22', 'Un total de <b>{TOTAL}</b> critères ont été validé sur les 22 critères audité.', 'fr'),
-(9, 526745, '0', 5, '', '0', '0', '', 'fr'),
-(8, 526745, '0', 5, '', '0', '0', '', 'fr');
 
 -- --------------------------------------------------------
 
@@ -263,10 +275,11 @@ CREATE TABLE `lime_groups` (
 --
 
 INSERT INTO `lime_groups` (`gid`, `sid`, `group_name`, `group_order`, `description`, `language`, `randomization_group`, `grelevance`) VALUES
-(5, 526745, 'Principe : perceptible', 1, 'L\'information et les composants de l\'interface utilisateur doivent être présentés à l\'utilisateur de façon à ce qu\'il puisse les percevoir.', 'fr', '', ''),
 (4, 526745, 'Informations d\'audit', 0, 'Cette section a pour but de récolter de informations concernant l\'audit d\'accessibilité, tel que le site Web audité ou encore l\'auditeur.', 'fr', '', ''),
-(8, 526745, 'Principe : utilisable', 2, '', 'fr', '', ''),
-(7, 526745, 'Assesments test', 3, '', 'fr', '', '');
+(9, 526745, '1.1 Equivalents textuels', 1, '<span style=\"font-size:9.0pt\"><span style=\"font-family:&quot;Arial&quot;,sans-serif\">proposer des équivalents textuels à tout contenu non textuel qui pourra alors être présenté sous d\'autres formes selon les besoins de l\'utilisateur : grands caractères, braille, synthèse vocale, symboles ou langage simplifié.</span></span>', 'fr', '', ''),
+(10, 526745, '1.2 Média temporel', 2, '<p style=\"margin:6pt 0cm 6pt 30pt\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Arial&quot;,sans-serif\">Pour des médias pré-enregistrés seulement audio et pré-enregistrés seulement vidéo, sauf si l\'audio ou la vidéo sont un média de remplacement pour un texte et qu\'ils sont clairement identifiés comme tels : </span></span></p>\r\n\r\n<ul>\r\n	<li style=\"margin:6pt 0cm 6pt 30pt\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Arial&quot;,sans-serif\">Contenu pré-enregistré seulement audio : fournir une version de remplacement pour un média temporel, présentant une information équivalente au contenu seulement audio</span></span></li>\r\n	<li style=\"margin:6pt 0cm 6pt 30pt\"><span style=\"font-size:9pt\"><span style=\"font-family:&quot;Arial&quot;,sans-serif\">Contenu pré-enregistré seulement vidéo : fournir, soit une version de remplacement pour un média temporel, soit une piste audio (présentant une information équivalente) pour un contenu pré-enregistré seulement vidéo.</span></span></li>\r\n</ul>\r\n', 'fr', '', ''),
+(11, 526745, '1.3 Adaptable', 3, '<span style=\"font-size:9.0pt\"><span style=\"font-family:\"Arial\",sans-serif\">créer un contenu qui puisse être présenté de différentes manières sans perte d\'information ni de structure (par exemple avec une mise en page simplifiée).</span></span>', 'fr', '', ''),
+(12, 526745, '1.4 Distinguable', 4, '<span style=\"font-size:9.0pt\"><span style=\"font-family:&quot;Arial&quot;,sans-serif\">faciliter la perception visuelle et auditive du contenu par l\'utilisateur, notamment en séparant le premier plan de l\'arrière-plan.</span></span>', 'fr', '', '');
 
 -- --------------------------------------------------------
 
@@ -347,6 +360,13 @@ CREATE TABLE `lime_notifications` (
   `created` datetime DEFAULT NULL,
   `first_read` datetime DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `lime_notifications`
+--
+
+INSERT INTO `lime_notifications` (`id`, `entity`, `entity_id`, `title`, `message`, `status`, `importance`, `display_class`, `hash`, `created`, `first_read`) VALUES
+(6, 'user', 1, 'Password warning', '<span class=\"fa fa-exclamation-circle text-warning\"></span>&nbsp;Warning: You are still using the default password (&#039;password&#039;). Please change your password and re-login again.', 'read', 3, 'default', '347fdd7195c8f6815afbeaec395be28315230e1279c60a904f46c12749c0240a', '2018-06-13 15:24:30', '2018-06-13 15:24:34');
 
 -- --------------------------------------------------------
 
@@ -537,13 +557,13 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (36, 28, 526745, 4, 'T', 'SQ004', 'Google Chrome', NULL, NULL, 'N', 'N', 3, 'fr', 0, 0, '1', ''),
 (35, 28, 526745, 4, 'T', 'SQ003', 'Mozilla Firefox', NULL, NULL, 'N', 'N', 2, 'fr', 0, 0, '1', ''),
 (34, 28, 526745, 4, 'T', 'SQ002', 'Microsoft Edge', NULL, NULL, 'N', 'N', 1, 'fr', 0, 0, '1', ''),
-(33, 0, 526745, 5, 'L', 'ContenuNonTextuelD', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si un CAPTCHA a été utilisé, est-ce qu’un équivalent textuel a été prévu ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 3, 'fr', 0, 0, '', ''),
-(47, 0, 526745, 5, 'L', 'AdaptableA', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les titres indiquent la structure du document ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 4, 'fr', 0, 0, '1', ''),
-(31, 0, 526745, 5, 'L', 'ContenuNonTextuelC', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que toute image décorative utilisée pour la mise en page est assortie d’un attribut alt vide ou est masquée de manière à être compatible avec les technologies d’assistance (p. ex. lecteur d’écran) ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 2, 'fr', 0, 0, '', ''),
-(30, 0, 526745, 5, 'L', 'ContenuNonTextuelB', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si cet équivalent textuel ne suffit pas, est-ce qu’un descriptif est fourni ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 1, 'fr', 0, 0, '', ''),
-(29, 0, 526745, 5, 'L', 'ContenuNonTextuelA', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tout contenu non textuel, tel qu’une image, un graphique, un objet, un bouton dans un formulaire ou une zone active dans un menu graphique ergonomique, est remplacé par un équivalent textuel ? </span></span></span><br />\r\n<br />\r\n-A-', '', '', 'N', 'Y', 0, 'fr', 0, 0, '', ''),
+(33, 0, 526745, 9, 'L', 'ContenuNonTextuelD', '<h4>Contenu non textuel -A-</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si un CAPTCHA a été utilisé, est-ce qu’un équivalent textuel a été prévu ? </span></span></span><br />\r\n </p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Afin que les images contenant des informations soient accessibles tant aux utilisateurs aveugles et malvoyants qu’aux moteurs de recherche, elles doivent être décrites de manière pertinente dans un équivalent textuel.</p>\r\n\r\n<p>Lorsque le graphique est une photo ou un symbole (p.ex.: Imprimer, PDF), le contenu représenté doit être décrit de manière équivalente dans le texte alt.</p>\r\n\r\n<p>Lorsque le graphique est une infographie, l’équivalent textuel ne suffit souvent pas à décrire le contenu d’un diagramme ou d’un organigramme. L’infographie doit faire l’objet d’une description supplémentaire, ce qui est faisable directement dans le texte proche ou au moyen de l’attribut longdesc.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 3, 'fr', 0, 0, '', ''),
+(47, 0, 526745, 11, 'L', 'AdaptableA', '<h4>Informations et relations : Titres -A-</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les titres indiquent la structure du document ? </span></span></span></p>\r\n\r\n<p> </p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Les en-têtes (h1, h2, h3, etc.) introduisent les blocs d\'information et reflètent la structure sémantique ainsi que la signification des blocs du site internet. Ce dernier ne doit pas impérativement commencer par un en-tête 1 (h1). Toutefois, les utilisateurs malvoyants apprécient tout particulièrement lorsque les en-têtes sont structurés de manière hiérarchique (h1, suivi de h2, h3, etc.) et qu\'il ne manque aucun niveau.</p>\r\n\r\n<p> </p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'N', 'Y', 0, 'fr', 0, 0, '1', ''),
+(31, 0, 526745, 9, 'L', 'ContenuNonTextuelC', '<h4>Contenu non textuel -A-</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que toute image décorative utilisée pour la mise en page est assortie d’un attribut alt vide ou est masquée de manière à être compatible avec les technologies d’assistance (p. ex. lecteur d’écran) ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Afin que les images contenant des informations soient accessibles tant aux utilisateurs aveugles et malvoyants qu’aux moteurs de recherche, elles doivent être décrites de manière pertinente dans un équivalent textuel.</p>\r\n\r\n<p>Lorsque le graphique est une photo ou un symbole (p.ex.: Imprimer, PDF), le contenu représenté doit être décrit de manière équivalente dans le texte alt.</p>\r\n\r\n<p>Lorsque le graphique est une infographie, l’équivalent textuel ne suffit souvent pas à décrire le contenu d’un diagramme ou d’un organigramme. L’infographie doit faire l’objet d’une description supplémentaire, ce qui est faisable directement dans le texte proche ou au moyen de l’attribut longdesc.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 2, 'fr', 0, 0, '', ''),
+(30, 0, 526745, 9, 'L', 'ContenuNonTextuelB', '<h4>Contenu non textuel -A-</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Si cet équivalent textuel ne suffit pas, est-ce qu’un descriptif est fourni ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Afin que les images contenant des informations soient accessibles tant aux utilisateurs aveugles et malvoyants qu’aux moteurs de recherche, elles doivent être décrites de manière pertinente dans un équivalent textuel.</p>\r\n\r\n<p>Lorsque le graphique est une photo ou un symbole (p.ex.: Imprimer, PDF), le contenu représenté doit être décrit de manière équivalente dans le texte alt.</p>\r\n\r\n<p>Lorsque le graphique est une infographie, l’équivalent textuel ne suffit souvent pas à décrire le contenu d’un diagramme ou d’un organigramme. L’infographie doit faire l’objet d’une description supplémentaire, ce qui est faisable directement dans le texte proche ou au moyen de l’attribut longdesc.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 1, 'fr', 0, 0, '', ''),
+(29, 0, 526745, 9, 'L', 'ContenuNonTextuelA', '<h4>Contenu non textuel -A-</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tout contenu non textuel, tel qu’une image, un graphique, un objet, un bouton dans un formulaire ou une zone active dans un menu graphique ergonomique, est remplacé par un équivalent textuel ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Afin que les images contenant des informations soient accessibles tant aux utilisateurs aveugles et malvoyants qu’aux moteurs de recherche, elles doivent être décrites de manière pertinente dans un équivalent textuel.</p>\r\n\r\n<p>Lorsque le graphique est une photo ou un symbole (p.ex.: Imprimer, PDF), le contenu représenté doit être décrit de manière équivalente dans le texte alt.</p>\r\n\r\n<p>Lorsque le graphique est une infographie, l’équivalent textuel ne suffit souvent pas à décrire le contenu d’un diagramme ou d’un organigramme. L’infographie doit faire l’objet d’une description supplémentaire, ce qui est faisable directement dans le texte proche ou au moyen de l’attribut longdesc.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 0, 'fr', 0, 0, '', ''),
 (28, 0, 526745, 4, 'M', 'outilaudit', 'Outils utilisées :', '', '', 'N', 'N', 4, 'fr', 0, 0, '1', ''),
-(27, 0, 526745, 4, '!', 'niveauconformite', 'Niveau de conformité souhaité :', '', '', 'N', 'N', 5, 'fr', 0, 0, '1', ''),
+(27, 0, 526745, 4, 'M', 'niveauconformite', 'Niveau de conformité souhaité :', '', '', 'N', 'N', 5, 'fr', 0, 0, '1', ''),
 (26, 0, 526745, 4, 'D', 'dateaudit', 'Date de l\'audit :', '', '', 'N', 'N', 3, 'fr', 0, 0, '1', ''),
 (25, 0, 526745, 4, 'S', 'auditeur', 'Audit effectué par', '', '', 'N', 'N', 2, 'fr', 0, 0, '1', ''),
 (24, 0, 526745, 4, 'S', 'auteurweb', 'Auteur du site web', '', '', 'N', 'N', 1, 'fr', 0, 0, '1', ''),
@@ -551,26 +571,37 @@ INSERT INTO `lime_questions` (`qid`, `parent_qid`, `sid`, `gid`, `type`, `title`
 (37, 28, 526745, 4, 'T', 'SQ005', 'Safari', NULL, NULL, 'N', 'N', 4, 'fr', 0, 0, '1', ''),
 (38, 28, 526745, 4, 'T', 'SQ006', 'Opera', NULL, NULL, 'N', 'N', 5, 'fr', 0, 0, '1', ''),
 (39, 28, 526745, 4, 'T', 'SQ007', '', NULL, NULL, 'N', 'N', 6, 'fr', 0, 0, '1', ''),
-(46, 0, 526745, 7, 'L', 'astest2', 'Do you exercice ?', '', '', 'N', 'N', 1, 'fr', 0, 0, '1', NULL),
-(45, 0, 526745, 7, 'L', 'astest1', 'Do you smoke ?', '', '', 'N', 'N', 0, 'fr', 0, 0, '1', NULL),
-(48, 0, 526745, 5, 'L', 'AdaptableB', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les titres sont marqués en HTML (p. ex. h1, h2, h6) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 5, 'fr', 0, 0, '1', ''),
-(49, 0, 526745, 5, 'L', 'AdaptableC', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les listes sont balisées en tant que listes (ul, ol, dl) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 6, 'fr', 0, 0, '1', ''),
-(50, 0, 526745, 5, 'L', 'AdaptableD', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les formulaires en plusieurs parties contiennent des blocs d’information cohérents ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 7, 'fr', 0, 0, '1', NULL),
-(51, 0, 526745, 5, 'L', 'AdaptableE', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les labels sont associés aux champs de saisies dans les formulaires ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 8, 'fr', 0, 0, '1', NULL),
-(52, 0, 526745, 5, 'L', 'AdaptableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le texte est formaté avec un balisage sémantiquement correct ? Par exemple : les citations sont balisées avec <cite>. <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 9, 'fr', 0, 0, '1', NULL),
-(53, 0, 526745, 5, 'L', 'AdaptableG', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque les CSS sont désactivées, est-ce que le contenu de la page suit un ordre logique ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 10, 'fr', 0, 0, '1', ''),
-(54, 0, 526745, 5, 'L', 'AdaptableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’avec l’utilisation des CSS, le contenu textuel est correct (il n’y a pas d’espaces insécables ou d’espaces blancs) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 11, 'fr', 0, 0, '1', ''),
-(55, 0, 526745, 5, 'L', 'AdaptableI', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le positionnement des contenus à l’aide des CSS pour garantir la compréhension du texte est correct ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 12, 'fr', 0, 0, '1', ''),
-(56, 0, 526745, 5, 'L', 'AdaptableJ', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’il y a des instructions uniquement visuelles ou acoustiques, telles que « veuillez actionner le bouton vert à gauche » ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 13, 'fr', 0, 0, '1', ''),
-(57, 0, 526745, 5, 'L', 'DistinguableA', '<span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’information est uniquement véhiculée par la couleur </span></span></span>?', '', '', 'N', 'Y', 14, 'fr', 0, 0, '1', NULL),
-(58, 0, 526745, 5, 'L', 'DistinguableB', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque seule la couleur permet de distinguer p. ex. un hyperlien du texte environnant, est-ce que l’hyperlien présente un rapport de contraste de 3:1 ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 15, 'fr', 0, 0, '1', NULL),
-(59, 0, 526745, 5, 'L', 'DistinguableC', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan est d’au moins 4,5:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 16, 'fr', 0, 0, '1', ''),
-(60, 0, 526745, 5, 'L', 'DistinguableD', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture en grands caractères (minimum 18 pt ou 14 pt + gras) et celle de l’arrière-plan est d’au moins 3:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 17, 'fr', 0, 0, '1', ''),
-(61, 0, 526745, 5, 'L', 'DistinguableE', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tous les textes et instructions, ainsi que les bordures de champs et les textes des graphiques respectent le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan ?</span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Font exception les logos, les noms d’entreprise et les textes purement décoratifs. </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 18, 'fr', 0, 0, '1', ''),
-(64, 0, 526745, 5, 'L', 'DistinguableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que la présentation visuelle est essentielle pour la compréhension du message ? On songe ici à des logos et à des noms de marque. Ces contenus peuvent être assortis d’attributs alt et title. </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 21, 'fr', 0, 0, '1', NULL),
-(62, 0, 526745, 5, 'L', 'DistinguableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que dans les CSS, la taille des caractères est définie en % ou en em ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 19, 'fr', 0, 0, '1', ''),
-(63, 0, 526745, 5, 'L', 'DistinguableG', '<p align=\"left\" style=\"margin-bottom:.0001pt; text-align:left; margin:0cm 0cm 12pt\"><span style=\"font-size:10pt\"><span style=\"line-height:normal\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Le contenu est présenté sous forme de texte plutôt que sous forme d’image, sauf dans les cas suivants:<br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’image du texte peut être adaptée aux besoins du lecteur et est lisible sans CSS ? <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 20, 'fr', 0, 0, '1', NULL),
-(65, 0, 526745, 8, 'L', 'ClavierA', '<p align=\"left\" style=\"text-align:left; margin:0cm 0cm 12pt\"><span style=\"font-size:10pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">La partie ci-dessous traite de l’accessibilité au clavier (touche TAB). <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tous les éléments et les fonctionnalités régissant les pages sont accessibles au clavier ? <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 1, 'fr', 0, 0, '1', NULL);
+(48, 0, 526745, 11, 'L', 'AdaptableB', '<h4>Informations et relations : Titres -A</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">E</span></span></span><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">st-ce que les titres sont marqués en HTML (p. ex. h1, h2, h6) ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Les en-têtes (h1, h2, h3, etc.) introduisent les blocs d\'information et reflètent la structure sémantique ainsi que la signification des blocs du site internet. Ce dernier ne doit pas impérativement commencer par un en-tête 1 (h1). Toutefois, les utilisateurs malvoyants apprécient tout particulièrement lorsque les en-têtes sont structurés de manière hiérarchique (h1, suivi de h2, h3, etc.) et qu\'il ne manque aucun niveau.</p>\r\n\r\n<p> </p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'N', 'Y', 1, 'fr', 0, 0, '1', ''),
+(49, 0, 526745, 11, 'L', 'AdaptableC', '<h4>Informations et relations : Listes -A</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les listes sont balisées en tant que listes (ul, ol, dl) ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Les listes sont des éléments importants pour le regroupement et la structure sémantiques. Elles aident en particulier les utilisateurs de lecteurs d’écran à déterminer quand des informations sont listées, quels liens vont ensemble et où commence un nouveau groupe de liens.</p>\r\n\r\n<p>Pour les utilisateurs de lecteurs d\'écran, les énumérations non formatées constituent une bande de texte peu lisible dont la durée n\'est pas visible. En comparaison, le lecteur d\'écran annonce une liste comme suit: \"Liste comprenant 12 points …\".</p>\r\n\r\n<p>- Les énumérations de contenus (p.ex.: listes de produits) ne doivent pas simplement être représentées comme listes, mais doivent aussi être formatées en tant que telles.</p>\r\n\r\n<p>- La navigation doit toujours être formatée comme liste, même s’il s’agit d’une navigation horizontale.</p>\r\n\r\n<p>- Il faut regrouper les liens dans des unités logiques. Il faut par exemple rassembler plusieurs groupes de catégories principales dans une liste (<ul> ou <ol>) et les sous-catégories dans une autre liste.</p>\r\n\r\n<p>- Pour les glossaires, les listes commentées de liens ou autres et des listes de définitions (LD) peuvent être utilisées (voir exemple de code).</p>\r\n\r\n<p>- Les listes doivent être correctement imbriquées (voir exemple de code).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'N', 'Y', 2, 'fr', 0, 0, '1', ''),
+(50, 0, 526745, 11, 'L', 'AdaptableD', '<h4>Informations et relations : Formulaires -A</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les formulaires en plusieurs parties contiennent des blocs d’information cohérents ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il faut utiliser l\'élément <label> pour relier logiquement les étiquettes et les champs de saisie des formulaires. L\'élément <fieldset> sert à créer des sections dans les longs formulaires et à regrouper les cases à cocher et les boutons radio.</p>\r\n\r\n<p>Meilleures pratiques pour les formulaires: <a href=\"http://www.usability.com.au/resources/wcag2/\">WCAG 2.0</a></p>\r\n\r\n<p>Remarque :</p>\r\n\r\n<p>Il faut utiliser l\'élément <label> pour relier logiquement les étiquettes et les champs de saisie des formulaires.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'N', 'Y', 3, 'fr', 0, 0, '1', ''),
+(51, 0, 526745, 11, 'L', 'AdaptableE', '<h4>Informations et relations : Formulaires -A</h4>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que les labels sont associés aux champs de saisies dans les formulaires ? </span></span></span></p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il faut utiliser l\'élément <label> pour relier logiquement les étiquettes et les champs de saisie des formulaires. L\'élément <fieldset> sert à créer des sections dans les longs formulaires et à regrouper les cases à cocher et les boutons radio.</p>\r\n\r\n<p>Meilleures pratiques pour les formulaires: <a href=\"http://www.usability.com.au/resources/wcag2/\">WCAG 2.0</a></p>\r\n\r\n<p>Remarque :</p>\r\n\r\n<p>Il faut utiliser l\'élément <label> pour relier logiquement les étiquettes et les champs de saisie des formulaires.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'N', 'Y', 4, 'fr', 0, 0, '1', ''),
+(52, 0, 526745, 11, 'L', 'AdaptableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le texte est formaté avec un balisage sémantiquement correct ? Par exemple : les citations sont balisées avec <cite>. <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-A-</span></span></span></p>\r\n', '', '', 'N', 'Y', 5, 'fr', 0, 0, '1', NULL),
+(53, 0, 526745, 11, 'L', 'AdaptableG', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque les CSS sont désactivées, est-ce que le contenu de la page suit un ordre logique ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 6, 'fr', 0, 0, '1', ''),
+(54, 0, 526745, 11, 'L', 'AdaptableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’avec l’utilisation des CSS, le contenu textuel est correct (il n’y a pas d’espaces insécables ou d’espaces blancs) ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 7, 'fr', 0, 0, '1', ''),
+(55, 0, 526745, 11, 'L', 'AdaptableI', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le positionnement des contenus à l’aide des CSS pour garantir la compréhension du texte est correct ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 8, 'fr', 0, 0, '1', ''),
+(56, 0, 526745, 11, 'L', 'AdaptableJ', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce qu’il y a des instructions uniquement visuelles ou acoustiques, telles que « veuillez actionner le bouton vert à gauche » ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 9, 'fr', 0, 0, '1', ''),
+(57, 0, 526745, 12, 'L', 'DistinguableA', '<h4><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’information est uniquement véhiculée par la couleur </span></span></span>?</h4>\r\n', '', '', 'N', 'Y', 0, 'fr', 0, 0, '1', ''),
+(58, 0, 526745, 12, 'L', 'DistinguableB', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Lorsque seule la couleur permet de distinguer p. ex. un hyperlien du texte environnant, est-ce que l’hyperlien présente un rapport de contraste de 3:1 ? </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-A-</p>\r\n', '', '', 'N', 'Y', 1, 'fr', 0, 0, '1', NULL),
+(59, 0, 526745, 12, 'L', 'DistinguableC', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan est d’au moins 4,5:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 3, 'fr', 0, 0, '1', ''),
+(60, 0, 526745, 12, 'L', 'DistinguableD', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que le rapport de contraste entre la couleur de l’écriture en grands caractères (minimum 18 pt ou 14 pt + gras) et celle de l’arrière-plan est d’au moins 3:1 ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 5, 'fr', 0, 0, '1', ''),
+(61, 0, 526745, 12, 'L', 'DistinguableE', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que tous les textes et instructions, ainsi que les bordures de champs et les textes des graphiques respectent le rapport de contraste entre la couleur de l’écriture par rapport à celle de l’arrière-plan ?</span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Font exception les logos, les noms d’entreprise et les textes purement décoratifs. </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 6, 'fr', 0, 0, '1', ''),
+(64, 0, 526745, 12, 'L', 'DistinguableH', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que la présentation visuelle est essentielle pour la compréhension du message ? On songe ici à des logos et à des noms de marque. Ces contenus peuvent être assortis d’attributs alt et title. </span></span></span><br></p>\r\n\r\n<p><br></p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 7, 'fr', 0, 0, '1', NULL),
+(62, 0, 526745, 12, 'L', 'DistinguableF', '<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que dans les CSS, la taille des caractères est définie en % ou en em ? </span></span></span></p>\r\n\r\n<p> </p>\r\n\r\n<p>-AA-</p>\r\n', '', '', 'N', 'Y', 4, 'fr', 0, 0, '1', ''),
+(63, 0, 526745, 12, 'L', 'DistinguableG', '<p align=\"left\" style=\"margin-bottom:.0001pt; text-align:left; margin:0cm 0cm 12pt\"><span style=\"font-size:10pt\"><span style=\"line-height:normal\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Le contenu est présenté sous forme de texte plutôt que sous forme d’image, sauf dans les cas suivants:<br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">Est-ce que l’image du texte peut être adaptée aux besoins du lecteur et est lisible sans CSS ? <br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\"><br></span></span></span></p>\r\n\r\n<p><span style=\"font-size:10.0pt\"><span style=\"line-height:130%\"><span style=\"font-family:&quot;Tahoma&quot;,sans-serif\">-AA-</span></span></span></p>\r\n', '', '', 'N', 'Y', 2, 'fr', 0, 0, '1', NULL),
+(75, 0, 526745, 10, 'L', 'AudioDescB', '<h4>Audio-description ou version de remplacement pour un média temporel (pré-enregistré) -A</h4>\r\n\r\n<p>Une auto-description ou un descriptif sous forme de texte est fourni pour tout contenu vidéo pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants et malentendants d\'accéder aux contenus à caractère informatif de médias pré-enregistrés, p. ex. un podcast audio ou une vidéo sonore. Les actions non-verbales visibles ou audibles doivent être décrites si elles sont importantes au niveau du contenu.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Sous une vidéo figure un lien \"audiodescription\" vers un document sonore original complété par les commentaires d\'un locuteur sur les actions visibles.</p>\r\n\r\n<p>Alternative :</p>\r\n\r\n<p>une transcription textuelle (version textuelle) des mots prononcés, avec des références aux actions visibles ou audibles importantes, est mise à disposition sous forme de lien (format RTF ou HTML).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 6, 'fr', 0, 0, '1', ''),
+(70, 0, 526745, 10, 'L', 'ContenuAudioVideoA', '<h4>Contenu seulement audio ou vidéo (pré-enregistré) -A-</h4>\r\n\r\n<p>Un équivalent textuel est fourni pour tout contenu audio pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants et malentendants d\'accéder aux contenus informatifs pré-enregistrés de type purement audio ou vidéo.</p>\r\n\r\n<p>Exemple:</p>\r\n\r\n<p>Le contenu visuel d\'une vidéo peut être écouté en tant que podcast (fichier audio). A l\'inverse, le contenu d\'un podcast est décrit visuellement avec des dessins humoristiques. De ce fait, le principe des \"deux sens\" est respecté.</p>\r\n\r\n<p>Alternative : une transcription textuelle (version textuelle) des mots prononcés, avec des références aux actions visibles ou audibles importantes, est mise à disposition sous forme de lien (format RTF ou HTML).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 1, 'fr', 0, 0, '1', ''),
+(74, 0, 526745, 10, 'L', 'AudioDescA', '<h4>Audio-description ou version de remplacement pour un média temporel (pré-enregistré) -A-</h4>\r\n\r\n<p>Un équivalent textuel est fourni pour tout contenu audio pré-enregistré (p. ex baladeur numérique).</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants et malentendants d\'accéder aux contenus à caractère informatif de médias pré-enregistrés, p. ex. un podcast audio ou une vidéo sonore. Les actions non-verbales visibles ou audibles doivent être décrites si elles sont importantes au niveau du contenu.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Sous une vidéo figure un lien \"audiodescription\" vers un document sonore original complété par les commentaires d\'un locuteur sur les actions visibles.</p>\r\n\r\n<p>Alternative :</p>\r\n\r\n<p>une transcription textuelle (version textuelle) des mots prononcés, avec des références aux actions visibles ou audibles importantes, est mise à disposition sous forme de lien (format RTF ou HTML).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 5, 'fr', 0, 0, '1', ''),
+(73, 0, 526745, 10, 'L', 'SousTitresA', '<h4>Sous-titres (pré-enregistrés) -A-</h4>\r\n\r\n<p>Tout contenu audio pré-enregistré est assorti d\'un sous-titre qui s\'affiche au moment où le son est émis</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Afin que le contenu à caractère informatif de la langue parlée dans des vidéos soit aussi accessible aux utilisateurs malentendants, des sous-titres sont intégrés.</p>\r\n\r\n<p> </p>\r\n\r\n<p> </p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 4, 'fr', 0, 0, '1', ''),
+(71, 0, 526745, 10, 'L', 'ContenuAudioVideoB', '<h4>Contenu seulement audio ou vidéo (pré-enregistré) -A-</h4>\r\n\r\n<p>Un équivalent textuel est fourni pour tout contenu vidéo pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants et malentendants d\'accéder aux contenus informatifs pré-enregistrés de type purement audio ou vidéo.</p>\r\n\r\n<p>Exemple:</p>\r\n\r\n<p>Le contenu visuel d\'une vidéo peut être écouté en tant que podcast (fichier audio). A l\'inverse, le contenu d\'un podcast est décrit visuellement avec des dessins humoristiques. De ce fait, le principe des \"deux sens\" est respecté.</p>\r\n\r\n<p>Alternative : une transcription textuelle (version textuelle) des mots prononcés, avec des références aux actions visibles ou audibles importantes, est mise à disposition sous forme de lien (format RTF ou HTML).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 2, 'fr', 0, 0, '1', ''),
+(72, 0, 526745, 10, 'L', 'ContenuAudioVideoC', '<h4>Contenu seulement audio ou vidéo (pré-enregistré) -A-</h4>\r\n\r\n<p>Un équivalent textuel ou une piste audio est fourni pour tout contenu vidéo pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre:</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants et malentendants d\'accéder aux contenus informatifs pré-enregistrés de type purement audio ou vidéo.</p>\r\n\r\n<p>Exemple:</p>\r\n\r\n<p>Le contenu visuel d\'une vidéo peut être écouté en tant que podcast (fichier audio). A l\'inverse, le contenu d\'un podcast est décrit visuellement avec des dessins humoristiques. De ce fait, le principe des \"deux sens\" est respecté.</p>\r\n\r\n<p>Alternative : une transcription textuelle (version textuelle) des mots prononcés, avec des références aux actions visibles ou audibles importantes, est mise à disposition sous forme de lien (format RTF ou HTML).</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 3, 'fr', 0, 0, '1', ''),
+(67, 27, 526745, 4, 'T', 'L001', '-A-', NULL, NULL, 'N', NULL, 1, 'fr', 0, 0, 'A', ''),
+(68, 27, 526745, 4, 'T', 'L002', '-AA-', NULL, NULL, 'N', NULL, 2, 'fr', 0, 0, 'AA', ''),
+(69, 27, 526745, 4, 'T', 'L003', '-AAA-', NULL, NULL, 'N', NULL, 3, 'fr', 0, 0, 'AAA', ''),
+(76, 0, 526745, 10, 'L', 'AudioDescC', '<h4>Sous-titres (en direct) -AA-</h4>\r\n\r\n<p>Tout contenu audio en direct est assorti d\'un sous-titre qui s\'affiche au moment où le son est émis</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Des sous-titres sont mis à disposition afin que les contenus audio à caractère informatif transmis en direct soient aussi accessibles aux utilisateurs malentendants.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Le journal télévisé est sous-titré en direct et diffusé sous cette forme.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 7, 'fr', 0, 0, '1', ''),
+(77, 0, 526745, 10, 'L', 'AudioDescD', '<h4>Audio description (pré-enregistrée) -AA-</h4>\r\n\r\n<p>Une auto-description est obligatoirement fournie pour tout contenu vidéo pré-enregistré (plus contraignant)</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il existe une solution de remplacement qui permet aux utilisateurs malvoyants d\'accéder à tous les contenus vidéo pré-enregistrés à caractère informatif. Les actions visibles et les actions non-verbales importantes au niveau du contenu doivent être décrites.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Sous une vidéo figure un lien \"audiodescription\" vers un document sonore original complété par les commentaires d\'un locuteur sur les actions visibles.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 8, 'fr', 0, 0, '1', ''),
+(79, 0, 526745, 10, 'L', 'AudioDescF', '<h4>Audio-description étendue(pré-enregistrée) -AAA-</h4>\r\n\r\n<p>Lorseque les pauses dans la bande sonore sont trop courtes pour qu\'il soit possible de restituer le sens de la vidéo, une audio-description étendue est fournie pour tout contenu vidéo pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Les utilisateurs malvoyants doivent pouvoir accéder à tous les contenus vidéo pré-enregistrés à caractère informatif. Il s\'agit également de décrire les actions visibles non-verbales importantes au niveau du contenu.</p>\r\n\r\n<p>Les critères A et AA sont étendus, par exemple lorsque les pauses entre les scènes sont trop courtes pour que le locuteur ait le temps de décrire les actions visibles.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Sous une vidéo figure un lien \"audiodescription étendue\" vers un document sonore qui interrompt le son original pour décrire les actions visibles.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 10, 'fr', 0, 0, '1', ''),
+(78, 0, 526745, 10, 'L', 'AudioDescE', '<h4>Langue des signes (pré-enregistrée) -AAA-</h4>\r\n\r\n<p>Une vidéo en langue des signes est fournie pour tout contenu audio pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>L\'utilisation de vidéos en langue des signes est recommandée pour les sites internet qui s\'adressent au grand public. Les contenus complexes d\'un site doivent être assortis de vidéos en langue des signes, sous forme d\'alternative ou de résumé présenté.</p>\r\n\r\n<p>La langue maternelle de nombreux malentendants est celle des signes; la langue écrite n\'est que leur seconde langue. Ces personnes ont donc souvent de grandes difficultés à comprendre les informations écrites. Seule la langue des signes leur permet d\'accéder à toute l\'information et leur garantit un niveau de connaissances équivalent. L\'usage sans restriction de cette \"langue maternelle\" contribue ainsi amplement à une transmission non discriminatoire des contenus informatifs aux malentendants.</p>\r\n\r\n<p>Exemple :</p>\r\n\r\n<p>Exemples de vidéos en langue des signes: <a href=\"www.access-for-all.ch\">www.access-for-all.ch</a> et <a href=\"http://www.pisourd.ch/\">pisourd.ch</a></p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 9, 'fr', 0, 0, '1', ''),
+(80, 0, 526745, 10, 'L', 'AudioDescG', '<h4>Version de remplacement pour un média temporel (pré-enregistré) -AAA-</h4>\r\n\r\n<p>Un équivalent textuel est fourni pour tout contenu audiovisuel pré-enregistré</p>\r\n', '', '<div class=\"panel-group\">\r\n<div class=\"panel panel-default\">\r\n<div class=\"panel-heading\">\r\n<h4 class=\"panel-title\"><a data-toggle=\"collapse\" href=\"#aide\">Aide</a></h4>\r\n</div>\r\n\r\n<div class=\"panel-collapse collapse\" id=\"aide\">\r\n<div class=\"panel-body\">\r\n<p>Comprendre :</p>\r\n\r\n<p>Il doit exister une solution de remplacement pour tout média vidéo pré-enregistré. Il peut s\'agir d\'une transcription ou d\'une description des actions et des textes parlés, mise à disposition sous forme de lien.</p>\r\n\r\n<p>Les critères A et AA sont étendus et les exigences formulées ci-dessus élargies à toutes les vidéos pré-enregistrées, c\'est-à-dire également à celles dont le contenu figure déjà sur le site internet sous une autre forme.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n', 'Y', 'Y', 11, 'fr', 0, 0, '1', '');
 
 -- --------------------------------------------------------
 
@@ -591,23 +622,23 @@ CREATE TABLE `lime_question_attributes` (
 --
 
 INSERT INTO `lime_question_attributes` (`qaid`, `qid`, `attribute`, `value`, `language`) VALUES
-(27, 33, 'question_template', 'radio_accessible', NULL),
-(26, 31, 'question_template', 'radio_accessible', NULL),
-(25, 30, 'question_template', 'radio_accessible', NULL),
-(24, 29, 'question_template', 'radio_accessible', NULL),
-(28, 47, 'question_template', 'radio_accessible', NULL),
-(17, 45, 'question_template', 'radio_accessible', NULL),
-(18, 46, 'question_template', 'radio_accessible', NULL),
-(30, 48, 'question_template', 'radio_accessible', NULL),
-(32, 49, 'question_template', 'radio_accessible', NULL),
-(33, 50, 'question_template', 'radio_accessible', NULL),
-(34, 51, 'question_template', 'radio_accessible', NULL),
+(114, 33, 'question_template', 'radio_accessible', NULL),
+(113, 31, 'question_template', 'radio_accessible', NULL),
+(112, 30, 'question_template', 'radio_accessible', NULL),
+(111, 29, 'question_template', 'radio_accessible', NULL),
+(137, 47, 'question_template', 'radio_accessible', NULL),
+(110, 70, 'question_template', 'radio_accessible', NULL),
+(75, 27, 'min_answers', '1', NULL),
+(138, 48, 'question_template', 'radio_accessible', NULL),
+(139, 49, 'question_template', 'radio_accessible', NULL),
+(140, 50, 'question_template', 'radio_accessible', NULL),
+(141, 51, 'question_template', 'radio_accessible', NULL),
 (35, 52, 'question_template', 'radio_accessible', NULL),
 (40, 53, 'question_template', 'radio_accessible', NULL),
 (41, 54, 'question_template', 'radio_accessible', NULL),
 (42, 55, 'question_template', 'radio_accessible', NULL),
 (43, 56, 'question_template', 'radio_accessible', NULL),
-(44, 57, 'question_template', 'radio_accessible', NULL),
+(125, 57, 'question_template', 'radio_accessible', NULL),
 (45, 58, 'question_template', 'radio_accessible', NULL),
 (52, 59, 'question_template', 'radio_accessible', NULL),
 (53, 60, 'question_template', 'radio_accessible', NULL),
@@ -615,7 +646,17 @@ INSERT INTO `lime_question_attributes` (`qaid`, `qid`, `attribute`, `value`, `la
 (55, 62, 'question_template', 'radio_accessible', NULL),
 (51, 63, 'question_template', 'radio_accessible', NULL),
 (56, 64, 'question_template', 'radio_accessible', NULL),
-(57, 65, 'question_template', 'radio_accessible', NULL);
+(74, 27, 'max_answers', '3', NULL),
+(109, 71, 'question_template', 'radio_accessible', NULL),
+(108, 72, 'question_template', 'radio_accessible', NULL),
+(107, 73, 'question_template', 'radio_accessible', NULL),
+(115, 74, 'question_template', 'radio_accessible', NULL),
+(116, 75, 'question_template', 'radio_accessible', NULL),
+(117, 76, 'question_template', 'radio_accessible', NULL),
+(118, 77, 'question_template', 'radio_accessible', NULL),
+(119, 78, 'question_template', 'radio_accessible', NULL),
+(120, 79, 'question_template', 'radio_accessible', NULL),
+(122, 80, 'question_template', 'radio_accessible', NULL);
 
 -- --------------------------------------------------------
 
@@ -720,11 +761,11 @@ INSERT INTO `lime_settings_global` (`stg_name`, `stg_value`) VALUES
 ('defaultlang', 'en'),
 ('AssetsVersion', '30033'),
 ('last_survey_1', '526745'),
-('last_question_1', '29'),
+('last_question_1', '52'),
 ('last_question_sid_1', '526745'),
-('last_question_gid_1', '5'),
-('last_question_1_526745', '29'),
-('last_question_1_526745_gid', '5'),
+('last_question_gid_1', '11'),
+('last_question_1_526745', '52'),
+('last_question_1_526745_gid', '11'),
 ('admintheme', 'Bay_of_Many');
 
 -- --------------------------------------------------------
@@ -1574,7 +1615,7 @@ ALTER TABLE `lime_failed_login_attempts`
 -- AUTO_INCREMENT pour la table `lime_groups`
 --
 ALTER TABLE `lime_groups`
-  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `gid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT pour la table `lime_labels`
@@ -1592,7 +1633,7 @@ ALTER TABLE `lime_labelsets`
 -- AUTO_INCREMENT pour la table `lime_notifications`
 --
 ALTER TABLE `lime_notifications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `lime_participant_attribute_names`
@@ -1628,13 +1669,13 @@ ALTER TABLE `lime_plugin_settings`
 -- AUTO_INCREMENT pour la table `lime_questions`
 --
 ALTER TABLE `lime_questions`
-  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `qid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT pour la table `lime_question_attributes`
 --
 ALTER TABLE `lime_question_attributes`
-  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `qaid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=142;
 
 --
 -- AUTO_INCREMENT pour la table `lime_quota`
