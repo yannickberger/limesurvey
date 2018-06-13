@@ -17,37 +17,10 @@
 #}
 
 <!-- answer_row_other -->
-<div id='javatbd{{ myfname }}' class='form-group answer-item radio-item  form-inline'>
+<div id='javatbd{{myfname}}' class='form-group'>
     <div class="row">
-        <fieldset aria-label={{othertext}}>
-            <legend hidden>{{othertext}}</legend>
-            <!-- Checkbox + label -->
-            <div class="form-group othertext-label-checkox-container radio-item">
-                <input
-                type="radio"
-                value="-oth-"
-                name="{{name}}"
-                id="SOTH{{name}}"
-                {{checkedState}}
-                onclick="{{checkconditionFunction}}(this.value, this.name, this.type)"
-                />
-
-                <label for="SOTH{{name}}" class="control-label label-radio" id="label-id-{{name}}">{{othertext}}</label>
-            </div>
-
-            <!-- comment -->
-            <div class="form-group text-item other-text-item">
-                <input
-                type="text"
-                class="form-control {{kpclass}} input-sm"
-                id="answer{{name}}othertext"
-                name="{{name}}other"
-                title="{{gT('Other')}}" {{answer_other}}
-                onkeyup="if($.trim($(this).val())!=''){ $('#SOTH{{ name }}').click(); };  {{oth_checkconditionFunction}}",
-                aria-labelledby="label-id-{{name}}"
-                />
-            </div>
-        </fieldset>
+        <label for="exampleFormControlTextarea1" aria-label="Remarques">Remarques</label>
+        <textarea class="form-control" id="remarques_{{name}}" rows="2"></textarea>
     </div>
 </div>
 <!-- end of answer_row_other -->
