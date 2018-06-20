@@ -8,10 +8,10 @@ LimeSurvey est l'outil numréo 1 de questionnaire open-source
 
 ### Demo
 
-Voir la démo d'amdministration [Administration Demo](http://demo.limesurvey.org/index.php?r=admin/authentication/sa/login).
+Voir la démo d'amdministration : [Démo d'administration](http://demo.limesurvey.org/index.php?r=admin/authentication/sa/login).
 les identifiant sont déjà paramétrez, il suffit de cliquer **Log in**
 
-Essayez un questionnaire test[test surveys](https://survey.limesurvey.org/index.php?sid=78184&lang=en)
+Essayez un questionnaire test : [Questionnaire de test](https://survey.limesurvey.org/index.php?sid=78184&lang=en)
 
 # Installation
 
