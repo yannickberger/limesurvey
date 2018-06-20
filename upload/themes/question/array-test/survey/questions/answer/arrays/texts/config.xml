@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    A customization of the 5-point-choice question template to insert smileys.
+-->
+
+<config>
+    <!-- Those metadata will be displayed in the template configuration page. They are not used for now. -->
+    <metadata>
+        <name>ArrayAccessible</name>
+        <title>Array Accessible - Texts</title>
+        <creationDate>05/06/2018</creationDate>
+        <author>Yannick Berger</author>
+        <authorEmail>yannick.berger@he-arc.ch</authorEmail>
+        <authorUrl>http://limesurvey.org</authorUrl>
+        <license>GNU General Public License version 2 or later</license>
+        <version>1.0</version>
+        <apiVersion>1</apiVersion>
+        <description>A 5-point-array test</description>
+    </metadata>
+
+    <!--
+        Here the list of the css/js files to load.
+        Any file here will be loaded via the asset manager (when in config.php debug = 0)
+    -->
+    <files>
+        <css>
+        </css>
+        <js>
+        </js>
+    </files>
+
+    <custom_attributes>
+    </custom_attributes>
+
+    <!-- Here datas about how LimeSurvey should load the core js/css of the question -->
+    <engine>
+        <load_core_css>true</load_core_css>
+        <load_core_js>true</load_core_js>
+        <show_as_template>true</show_as_template>
+        <show_as_question_type>true</show_as_question_type>
+    </engine>
+</config>
