@@ -53,6 +53,9 @@ https://getcomposer.org/download/
 
 14. Commencer à utiliser LimeSurvey
 
+15. les identifiants par défaut sont : root et le mode de passe : password
+
+
 
 
 
