@@ -1,5 +1,5 @@
 ![LimeSurvey Logo](https://www.limesurvey.org/images/logos/logo_main.png)
-# Sophisticated online survey software
+# Logiciel de questionnaire online
 [![Build Status](https://travis-ci.org/LimeSurvey/LimeSurvey.svg?branch=master)](https://travis-ci.org/LimeSurvey/LimeSurvey/)
 
 
