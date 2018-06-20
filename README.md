@@ -51,6 +51,8 @@ https://getcomposer.org/download/
 
 ![Importer la base de donnée MySQL](img/import_sql.png?raw=true "Importer limesurvey.sql")
 
+14. Commencer à utiliser LimeSurvey
+
 
 
 
