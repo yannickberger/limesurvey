@@ -75,18 +75,23 @@ https://getcomposer.org/download/
 ![Commande composer install](img/composer_install.png?raw=true "Commande composer install")
 
 5. Lancer XAMPP et lancer les services Apache et MySQL
-6. Ouvrir la console de phpmyadmin
-
+6. Ouvrir un navigateur web et lancer :
+	localhost/limesurvey/admin/
+7. Choisir la langue souhaitée
+8. Vérifier que les minimums requis soit installé
+![Minimum requis](img/limesurvey_min.png?raw=true "Minimum requis")
+9. Paramétrer la base de donée comme ci-dessous :
+![Paramètres BDD](img/limesurvey_bdd.png?raw=true "Paramétrage base de donnée")
+10. Créer la base de donnée et la remplir
+11. Entrez les informations concernant l'administrateur du système de sondage
+12. Ouvrir la console PhpMyAdmin
 ![Ouvrir la console de phpmyadmin](img/phpmyadmin.png?raw=true "phpmyadmin console")
 
-7. Importer la base de donnée : limesurvey.sql
+13. Importer la base de donnée : limesurvey.sql
 
 ![Importer la base de donnée MySQL](img/import_sql.png?raw=true "Importer limesurvey.sql")
 
-8. Lancer limesurvey en tapant dans votre url : http://localhost/limesurvey/admin
-9. Entrez les identifiants suivant :
-	login : root
-	Mot de passe : password
+
 
 
 
