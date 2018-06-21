@@ -20,6 +20,7 @@
                 id="answer{{ name }}"
                 value=""
                 {{ check_ans }}
+                aria-labelledby="Bouton radio {{answer}}"
                 onclick="if (document.getElementById('answer{{ name }}othertext') != null) document.getElementById('answer{{ name }}othertext').value='';{{ checkconditionFunction }}(this.value, this.name, this.type)"
                 />
                 <label for="answer{{ name }}" class="control-label radio-label">

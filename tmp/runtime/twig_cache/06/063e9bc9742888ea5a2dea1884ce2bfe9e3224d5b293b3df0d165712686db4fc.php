@@ -72,26 +72,30 @@ class __TwigTemplate_ecf6d0c1e2fc3049c73da51a2755c14e47edf58c4f956b269d0f106b60b
         // line 45
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
-                    id=\"answer";
+                    aria-label=\"Bouton radio ";
         // line 46
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
+        echo "
+                    id=\"answer";
+        // line 47
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\"
                     value=";
-        // line 47
+        // line 48
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "
                     ";
-        // line 48
+        // line 49
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["fChecked"] ?? null));
         echo "
                 />
                     <label for=\"answer";
-        // line 50
+        // line 51
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\">
                         <span class=\"\" aria-hidden=\"true\"></span> ";
-        // line 51
+        // line 52
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo "
                     </label>
@@ -115,7 +119,7 @@ class __TwigTemplate_ecf6d0c1e2fc3049c73da51a2755c14e47edf58c4f956b269d0f106b60b
 
     public function getDebugInfo()
     {
-        return array (  95 => 51,  91 => 50,  86 => 48,  82 => 47,  77 => 46,  73 => 45,  66 => 41,  55 => 39,  50 => 37,  46 => 35,  43 => 27,);
+        return array (  99 => 52,  95 => 51,  90 => 49,  86 => 48,  81 => 47,  77 => 46,  73 => 45,  66 => 41,  55 => 39,  50 => 37,  46 => 35,  43 => 27,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

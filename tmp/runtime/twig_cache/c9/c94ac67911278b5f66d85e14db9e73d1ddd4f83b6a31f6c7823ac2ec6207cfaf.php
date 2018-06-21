@@ -51,7 +51,7 @@ class __TwigTemplate_1710e8da01d1b53023de514a87571e25fabea8b0c04dd2ed7ad0f5d8a12
         <textarea class=\"form-control\" id=\"remarques_";
         // line 23
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "\" rows=\"2\"></textarea>
+        echo "\" rows=\"2\" aria-label=\"Zone de texte pour remarques\"></textarea>
     </div>
 </div>
 <!-- end of answer_row_other -->

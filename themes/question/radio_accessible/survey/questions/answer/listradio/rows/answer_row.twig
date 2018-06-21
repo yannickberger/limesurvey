@@ -42,10 +42,11 @@ question_template_attribute.horizontal_scroll   : {{question_template_attribute.
                <input
                     class="radio-input"
                     type="radio"
-                    name="{{ name }}"
-                    id="answer{{ name }}{{ code }}"
-                    value={{ code }}
-                    {{ fChecked }}
+                    name="{{name}}"
+                    aria-label="Bouton radio {{answer}}
+                    id="answer{{name}}{{code}}"
+                    value={{code}}
+                    {{fChecked}}
                 />
                     <label for="answer{{ name }}">
                         <span class="" aria-hidden="true"></span> {{ answer }}
