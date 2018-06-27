@@ -26,7 +26,7 @@ https://getcomposer.org/download/
 ## Etapes
 1. Installer XAMPP (Apache + MySQL suffisent)
 2. Installer Composer
-3. Clone le repo "limesurvey" dane le dossier htdocs de votre install XAMPP
+3. Clone le repo "limesurvey" dans le dossier htdocs de votre install XAMPP
 
 ![Structure du dossier de htdocs](img/folders_xampp.png?raw=true "Folders organisation")
 
