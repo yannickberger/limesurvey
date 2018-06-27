@@ -40,17 +40,17 @@
 # /upload/themes/question/**/*.*
 # !/upload/themes/question/readme.txt
 
-# tmp directory : whole except the index.html for directory create
-#/tmp/*
-#!/tmp/*/*index.html
-#/tmp/assets/**/
-#/tmp/runtime/gii-1.1.18/*.*
-#/tmp/runtime/cache/*.bin
-#/tmp/runtime/plugin.log
-#/tmp/runtime/twig_cache/*
-#/tmp/runtime/CSS/*.ser
-#/tmp/runtime/HTML/*.ser
-#/tmp/runtime/URI/*.ser
+#tmp directory : whole except the index.html for directory create
+/tmp/*
+!/tmp/*/*index.html
+/tmp/assets/**/
+/tmp/runtime/gii-1.1.18/*.*
+/tmp/runtime/cache/*.bin
+/tmp/runtime/plugin.log
+/tmp/runtime/twig_cache/*
+/tmp/runtime/CSS/*.ser
+/tmp/runtime/HTML/*.ser
+/tmp/runtime/URI/*.ser
 
 
 # ignore plugins directory by default except LS plugin
@@ -110,10 +110,10 @@ third_party/composer/installed\.json
 Vagrantfile
 
 ## Exclude uploaded images in themes
-themes/survey/default/files/*
-themes/survey/material/files/*
-themes/survey/monochrome/files/*
-themes/survey/no_bootstrap/files/*
+#themes/survey/default/files/*
+#themes/survey/material/files/*
+#themes/survey/monochrome/files/*
+#themes/survey/no_bootstrap/files/*
 
 ## But still push the preshipped ones
 !themes/survey/*/files/logo.png
@@ -121,3 +121,15 @@ themes/survey/no_bootstrap/files/*
 !themes/survey/*/files/logo_w_s.png
 !themes/survey/*/files/pattern.png
 !themes/survey/*/files/print_img_radio.png
+
+##Excluded all master folder
+/admin/*
+/application/*
+/assets/*
+/docs/*
+/framework/*
+/installer/*
+/locale/*
+/plugins/*
+/tests/*
+/third_party/*
