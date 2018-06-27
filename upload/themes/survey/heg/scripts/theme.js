@@ -314,8 +314,8 @@ var ThemeScripts = function(){
 
 };
 
+//Fonction permettant la navigation par raccourcis clavier
 $(document).ready(function nav(e) {
-    // body...
     $(document).keypress(function(e) {
         e.preventDefault();
         if(e.key == "m" && e.ctrlKey) {
@@ -327,3 +327,7 @@ $(document).ready(function nav(e) {
         }
     });
 });
+
+/*$('.modal').on('modal-dialog', function() {
+  $(this).find('[autofocus]').focus();
+});*/

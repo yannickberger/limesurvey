@@ -115,14 +115,14 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo "\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modalfooter", array()));
             echo ">
-                <a ";
+                <button type=\"button\" ";
             // line 43
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modalfooterlink", array()));
             echo "  class=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modalfooterlink", array()));
-            echo "\">";
+            echo "\" autofocus=\"\">";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(gT("Close"));
-            echo "</a>
+            echo "</button>
             </div>
         </div>
     </div>
@@ -198,7 +198,7 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
                 <p></p>
             </div>
             <div class=\"{{ aSurveyInfo.class.modalfooter }}\" {{ aSurveyInfo.attr.modalfooter }}>
-                <a {{ aSurveyInfo.attr.modalfooterlink }}  class=\"{{ aSurveyInfo.class.modalfooterlink }}\">{{ gT(\"Close\") }}</a>
+                <button type=\"button\" {{ aSurveyInfo.attr.modalfooterlink }}  class=\"{{ aSurveyInfo.class.modalfooterlink }}\" autofocus=\"\">{{ gT(\"Close\") }}</button>
             </div>
         </div>
     </div>
