@@ -785,10 +785,17 @@ label::after{background-color:#337ab7}
 
 #description-text{
     text-align: left;
+    color: black;
 }
 
 .ls-link-action{
     color: white !important;
+}
+.ls-no-js-hidden{
+    color : white !important;
+}
+.li{
+    color : white !important;
 }
 .animate{
     color:white;

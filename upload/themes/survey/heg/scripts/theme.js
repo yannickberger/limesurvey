@@ -313,3 +313,17 @@ var ThemeScripts = function(){
     };
 
 };
+
+$(document).ready(function nav(e) {
+    // body...
+    $(document).keypress(function(e) {
+        e.preventDefault();
+        if(e.key == "m" && e.ctrlKey) {
+            //alert("keydown");
+            $("#ls-button-submit").trigger('click');
+        }
+        if(e.key == "b" && e.ctrlKey){
+            $("#ls-button-previous").trigger('click');
+        }
+    });
+});

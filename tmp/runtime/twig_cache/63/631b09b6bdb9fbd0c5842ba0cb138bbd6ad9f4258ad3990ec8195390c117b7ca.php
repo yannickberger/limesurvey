@@ -84,39 +84,40 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
         // line 31
         echo "
         <!-- Input -->
+
         <input
             class=\"form-control ";
-        // line 34
+        // line 35
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["kpclass"] ?? null));
         echo "\"
             type=\"text\"
             name=\"";
-        // line 36
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "\"
-            id=\"answer";
         // line 37
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
-            value=\"";
+            id=\"answer";
         // line 38
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
+        echo "\"
+            value=\"";
+        // line 39
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["dispVal"] ?? null));
         echo "\"
             ";
-        // line 39
+        // line 40
         if (($context["inputsize"] ?? null)) {
             echo "size=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["inputsize"] ?? null));
             echo "\" ";
         }
-        // line 40
+        // line 41
         echo "            ";
         if (($context["maxlength"] ?? null)) {
             echo "maxlength=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["maxlength"] ?? null));
             echo "\" ";
         }
-        // line 41
+        // line 42
         echo "            aria-labelledby=\"ls-question-text-";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["basename"] ?? null));
         echo "\"
@@ -124,35 +125,36 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
 
         <!-- Suffix -->
         ";
-        // line 45
+        // line 46
         if ((($context["suffix"] ?? null) != "")) {
-            // line 46
+            // line 47
             echo "            <div class='ls-input-group-extra suffix-text suffix'>";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["suffix"] ?? null));
             echo "</div>
         ";
         }
-        // line 48
+        // line 49
         echo "    ";
         if (((($context["prefix"] ?? null) != "") || (($context["suffix"] ?? null) != ""))) {
-            // line 49
+            // line 50
             echo "        </div>
     ";
         }
-        // line 51
+        // line 52
         if (($context["withColumn"] ?? null)) {
-            // line 52
+            // line 53
             echo "    </div>
 </div>
 
+
 ";
         } else {
-            // line 56
+            // line 58
             echo "</div>
 ";
         }
-        // line 58
-        echo "
+        // line 59
+        echo "  
 <!-- end of answer -->";
     }
 
@@ -168,7 +170,7 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
 
     public function getDebugInfo()
     {
-        return array (  155 => 58,  151 => 56,  145 => 52,  143 => 51,  139 => 49,  136 => 48,  130 => 46,  128 => 45,  120 => 41,  113 => 40,  107 => 39,  103 => 38,  99 => 37,  95 => 36,  90 => 34,  85 => 31,  79 => 29,  77 => 28,  74 => 27,  70 => 25,  67 => 24,  59 => 22,  54 => 20,  49 => 19,  47 => 18,  43 => 16,);
+        return array (  157 => 59,  153 => 58,  146 => 53,  144 => 52,  140 => 50,  137 => 49,  131 => 47,  129 => 46,  121 => 42,  114 => 41,  108 => 40,  104 => 39,  100 => 38,  96 => 37,  91 => 35,  85 => 31,  79 => 29,  77 => 28,  74 => 27,  70 => 25,  67 => 24,  59 => 22,  54 => 20,  49 => 19,  47 => 18,  43 => 16,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -213,6 +215,7 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
         {% endif %}
 
         <!-- Input -->
+
         <input
             class=\"form-control {{ kpclass }}\"
             type=\"text\"
@@ -235,10 +238,10 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
     </div>
 </div>
 
+
 {% else %}
 </div>
-{% endif %}
-
+{% endif %}  
 <!-- end of answer -->", "/survey/questions/answer/shortfreetext/text/item.twig", "C:\\xampp\\htdocs\\limesurvey\\application\\views\\survey\\questions\\answer\\shortfreetext\\text\\item.twig");
     }
 }
