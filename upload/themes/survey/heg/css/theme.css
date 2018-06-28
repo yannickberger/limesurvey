@@ -800,3 +800,6 @@ label::after{background-color:#337ab7}
 .animate{
     color:white;
 }
+a {
+    color: white !important;
+}
