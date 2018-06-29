@@ -21,7 +21,7 @@
 #}
 
 <!-- START OF GROUP: {{ aGroup.name }} {{ aGroup.gid }}  -->
-<div id='group-{{ aGroup.gseq }}' class="{{ aSurveyInfo.class.groupoutercontainer }}{{ aGroup.class }} space-col" {{ aSurveyInfo.attr.questiongroup }}>
+<div id='group-{{ aGroup.gseq }}' class="{{ aSurveyInfo.class.groupoutercontainer }}{{ aGroup.class }} space-col" {{ aSurveyInfo.attr.questiongroup }} tabindex="0">
 
     {# The container div itself could often change from a template to another, so we clearly separate it. #}
     {{ include('./subviews/survey/group_subviews/group_container.twig') }}

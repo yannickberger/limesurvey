@@ -17,7 +17,7 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
     {
         $tags = array();
         $filters = array();
-        $functions = array("include" => 25);
+        $functions = array("include" => 24);
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
@@ -47,14 +47,13 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "questiontitlecontainer", array()));
         echo "  col-xs-12 \" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "questiontitlecontainer", array()));
-        echo " >
-
+        echo " tabindex=\"0\">
     ";
-        // line 25
+        // line 24
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(twig_include($this->env, $context, "./subviews/survey/question_subviews/question_text_content.twig"));
-        echo "
-    
+        echo "   
 </div>
+
 ";
     }
 
@@ -70,7 +69,7 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
 
     public function getDebugInfo()
     {
-        return array (  54 => 25,  47 => 23,  43 => 21,);
+        return array (  53 => 24,  47 => 23,  43 => 21,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -105,11 +104,10 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
 #}
 
 <!-- Question text -->
-<div class=\"{{ aSurveyInfo.class.questiontitlecontainer }}  col-xs-12 \" {{ aSurveyInfo.attr.questiontitlecontainer }} >
-
-    {{ include('./subviews/survey/question_subviews/question_text_content.twig') }}
-    
+<div class=\"{{ aSurveyInfo.class.questiontitlecontainer }}  col-xs-12 \" {{ aSurveyInfo.attr.questiontitlecontainer }} tabindex=\"0\">
+    {{ include('./subviews/survey/question_subviews/question_text_content.twig') }}   
 </div>
+
 ", "./subviews/survey/question_subviews/question_text_container.twig", "C:\\xampp\\htdocs\\limesurvey\\upload\\themes\\survey\\heg\\views\\subviews\\survey\\question_subviews\\question_text_container.twig");
     }
 }

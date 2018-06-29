@@ -23,7 +23,7 @@
     <!-- Add a visual information + just Mandatory string for aria : can be improved -->
     <div class="{{ aSurveyInfo.class.questionasterix }} pull-left" {{ aSurveyInfo.attr.questionasterix }} >
         <small class="{{ aSurveyInfo.class.questionasterixsmall }} text-danger fa fa-asterisk small" {{ aSurveyInfo.attr.questionasterixsmall }}></small>
-        <span class="{{ aSurveyInfo.class.questionasterixspan }} sr-only text-danger" {{ aSurveyInfo.attr.questionasterixspan }} >
+        <span class="{{ aSurveyInfo.class.questionasterixspan }} sr-only text-danger" {{ aSurveyInfo.attr.questionasterixspan }} tabindex="0">
             {{ gT("(This question is mandatory)") }}
         </span>
     </div>

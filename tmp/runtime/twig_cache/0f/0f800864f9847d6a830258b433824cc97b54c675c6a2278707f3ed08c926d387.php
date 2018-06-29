@@ -47,7 +47,7 @@ class __TwigTemplate_bb31e5f13664e2ef126487709fbf633b9b605a90e5a5ef64a111fcfbb18
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "answercontainer", array()));
         echo " col-xs-12\" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "answercontainer", array()));
-        echo ">
+        echo " tabindex=\"0\">
     ";
         // line 25
         echo "    ";
@@ -104,7 +104,7 @@ class __TwigTemplate_bb31e5f13664e2ef126487709fbf633b9b605a90e5a5ef64a111fcfbb18
 #}
 
 <!-- Answer -->
-<div class=\"{{ aSurveyInfo.class.answercontainer }} col-xs-12\" {{ aSurveyInfo.attr.answercontainer }}>
+<div class=\"{{ aSurveyInfo.class.answercontainer }} col-xs-12\" {{ aSurveyInfo.attr.answercontainer }} tabindex=\"0\">
     {# NOTE: If you want to customize the question rendering, use a question theme #}
     {{ aQuestion.answer | raw }}
 </div>

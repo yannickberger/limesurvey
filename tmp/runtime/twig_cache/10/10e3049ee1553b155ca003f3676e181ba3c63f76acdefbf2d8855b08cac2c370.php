@@ -66,36 +66,37 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo " >
                <input
+                    tabindex=\"0\"
                     class=\"radio-input\"
                     type=\"radio\"
                     name=\"";
-        // line 45
+        // line 46
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
                     aria-label=\"Bouton radio ";
-        // line 46
+        // line 47
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo "
                     id=\"answer";
-        // line 47
+        // line 48
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\"
                     value=";
-        // line 48
+        // line 49
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "
                     ";
-        // line 49
+        // line 50
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["fChecked"] ?? null));
         echo "
                 />
                     <label for=\"answer";
-        // line 51
+        // line 52
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\">
                         <span class=\"\" aria-hidden=\"true\"></span> ";
-        // line 52
+        // line 53
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo "
                     </label>
@@ -119,7 +120,7 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
 
     public function getDebugInfo()
     {
-        return array (  99 => 52,  95 => 51,  90 => 49,  86 => 48,  81 => 47,  77 => 46,  73 => 45,  66 => 41,  55 => 39,  50 => 37,  46 => 35,  43 => 27,);
+        return array (  100 => 53,  96 => 52,  91 => 50,  87 => 49,  82 => 48,  78 => 47,  74 => 46,  66 => 41,  55 => 39,  50 => 37,  46 => 35,  43 => 27,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -174,6 +175,7 @@ question_template_attribute.horizontal_scroll   : {{question_template_attribute.
             <div class=\"form-group othertext-label-checkox-container radio-item\">
                <fieldset aria-label={{answer}} >
                <input
+                    tabindex=\"0\"
                     class=\"radio-input\"
                     type=\"radio\"
                     name=\"{{name}}\"

@@ -64,7 +64,7 @@ class __TwigTemplate_db7de7638c548c0b9e16b25e649238120ea579f6ae1e0f782bb524d92c6
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "questionasterixspan", array()));
             echo " sr-only text-danger\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "questionasterixspan", array()));
-            echo " >
+            echo " tabindex=\"0\">
             ";
             // line 27
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(gT("(This question is mandatory)"));
@@ -185,7 +185,7 @@ class __TwigTemplate_db7de7638c548c0b9e16b25e649238120ea579f6ae1e0f782bb524d92c6
     <!-- Add a visual information + just Mandatory string for aria : can be improved -->
     <div class=\"{{ aSurveyInfo.class.questionasterix }} pull-left\" {{ aSurveyInfo.attr.questionasterix }} >
         <small class=\"{{ aSurveyInfo.class.questionasterixsmall }} text-danger fa fa-asterisk small\" {{ aSurveyInfo.attr.questionasterixsmall }}></small>
-        <span class=\"{{ aSurveyInfo.class.questionasterixspan }} sr-only text-danger\" {{ aSurveyInfo.attr.questionasterixspan }} >
+        <span class=\"{{ aSurveyInfo.class.questionasterixspan }} sr-only text-danger\" {{ aSurveyInfo.attr.questionasterixspan }} tabindex=\"0\">
             {{ gT(\"(This question is mandatory)\") }}
         </span>
     </div>

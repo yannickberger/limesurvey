@@ -47,7 +47,7 @@ class __TwigTemplate_4d5e892075cf6eb0c76223474d67256f89108ff8fca1da0918b8ad427e9
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "questionvalidcontainer", array()));
         echo " text-info col-xs-12\" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "questionvalidcontainer", array()));
-        echo ">
+        echo " tabindex=\"0\">
     ";
         // line 24
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute(($context["aQuestion"] ?? null), "valid_message", array()));
@@ -112,7 +112,7 @@ class __TwigTemplate_4d5e892075cf6eb0c76223474d67256f89108ff8fca1da0918b8ad427e9
 #}
 
 <!-- LimeSurvey valid message and help -->
-<div class=\"{{ aSurveyInfo.class.questionvalidcontainer }} text-info col-xs-12\" {{ aSurveyInfo.attr.questionvalidcontainer }}>
+<div class=\"{{ aSurveyInfo.class.questionvalidcontainer }} text-info col-xs-12\" {{ aSurveyInfo.attr.questionvalidcontainer }} tabindex=\"0\">
     {{ aQuestion.valid_message      | raw }} {# The validation message, eg: \"Only numbers may be entered in this field.\". This text is inside EM Helper, and can be changed by creating a translation file #}
     {{ aQuestion.man_message        | raw }} {# The question mandatory error message: \"This question is mandatory!\". This text is inside EM Helper, and can be changed by creating a translation file #}
     {{ aQuestion.file_valid_message | raw }} {# Used only for file upload question type... TODO: check if we can remove it and use valid_message for file upload question type too #}
