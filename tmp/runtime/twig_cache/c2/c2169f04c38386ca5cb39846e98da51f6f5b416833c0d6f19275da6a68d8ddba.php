@@ -55,7 +55,7 @@ class __TwigTemplate_dd0132424b09202d1b51137c8aac7254c8ce23ccdc2892e13f5a52a6973
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute(($context["aGroup"] ?? null), "class", array()));
         echo " space-col\" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "questiongroup", array()));
-        echo " tabindex=\"0\">
+        echo ">
 
     ";
         // line 27
@@ -121,7 +121,7 @@ class __TwigTemplate_dd0132424b09202d1b51137c8aac7254c8ce23ccdc2892e13f5a52a6973
 #}
 
 <!-- START OF GROUP: {{ aGroup.name }} {{ aGroup.gid }}  -->
-<div id='group-{{ aGroup.gseq }}' class=\"{{ aSurveyInfo.class.groupoutercontainer }}{{ aGroup.class }} space-col\" {{ aSurveyInfo.attr.questiongroup }} tabindex=\"0\">
+<div id='group-{{ aGroup.gseq }}' class=\"{{ aSurveyInfo.class.groupoutercontainer }}{{ aGroup.class }} space-col\" {{ aSurveyInfo.attr.questiongroup }}>
 
     {# The container div itself could often change from a template to another, so we clearly separate it. #}
     {{ include('./subviews/survey/group_subviews/group_container.twig') }}

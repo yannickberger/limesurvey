@@ -47,7 +47,7 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "questiontitlecontainer", array()));
         echo "  col-xs-12 \" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "questiontitlecontainer", array()));
-        echo " tabindex=\"0\">
+        echo ">
     ";
         // line 24
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(twig_include($this->env, $context, "./subviews/survey/question_subviews/question_text_content.twig"));
@@ -104,7 +104,7 @@ class __TwigTemplate_a405cce0512a156107dd9efc21df0075df7b1a0e8a02ccac2e7f2268852
 #}
 
 <!-- Question text -->
-<div class=\"{{ aSurveyInfo.class.questiontitlecontainer }}  col-xs-12 \" {{ aSurveyInfo.attr.questiontitlecontainer }} tabindex=\"0\">
+<div class=\"{{ aSurveyInfo.class.questiontitlecontainer }}  col-xs-12 \" {{ aSurveyInfo.attr.questiontitlecontainer }}>
     {{ include('./subviews/survey/question_subviews/question_text_content.twig') }}   
 </div>
 

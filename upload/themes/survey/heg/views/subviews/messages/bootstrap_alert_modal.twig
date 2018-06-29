@@ -29,8 +29,8 @@
 
 <!-- Bootstrap Modal Alert -->
 {% if(aSurveyInfo.id.alertmodal)%}
-<div id="{{ aSurveyInfo.id.alertmodal }}" class="{{ aSurveyInfo.class.alertmodal }}" {{ aSurveyInfo.attr.alertmodal }}>
-    <div class="{{ aSurveyInfo.class.modaldialog }}" {{ aSurveyInfo.attr.modaldialog }}>
+<div id="{{ aSurveyInfo.id.alertmodal }}" class="{{ aSurveyInfo.class.alertmodal }}" {{ aSurveyInfo.attr.alertmodal }} role="dialog" aria-labelledby="Message d'alerte" tabindex="-1">
+    <div class="{{ aSurveyInfo.class.modaldialog }}" {{ aSurveyInfo.attr.modaldialog }} id="modal-alert">
         <div class="{{ aSurveyInfo.class.modalcontent }}" {{ aSurveyInfo.attr.modalcontent }} >
             <div class="{{ aSurveyInfo.class.modalheader }}" {{ aSurveyInfo.attr.modalheader }} >
                 <button  {{ aSurveyInfo.attr.modalclosebutton }} class="{{ aSurveyInfo.class.modalclosebutton }}"  >&times;</button>
@@ -39,10 +39,11 @@
             <div class="{{ aSurveyInfo.class.modalbody }}" {{ aSurveyInfo.attr.modalbody }}>
                 <p></p>
             </div>
-            <div class="{{ aSurveyInfo.class.modalfooter }}" {{ aSurveyInfo.attr.modalfooter }}>
-                <button type="button" {{ aSurveyInfo.attr.modalfooterlink }}  class="{{ aSurveyInfo.class.modalfooterlink }}" autofocus="">{{ gT("Close") }}</button>
+            <div id="modal-fermer" class="{{ aSurveyInfo.class.modalfooter }}" {{ aSurveyInfo.attr.modalfooter }}>
+                <button type="button" {{ aSurveyInfo.attr.modalfooterlink }}  class="{{ aSurveyInfo.class.modalfooterlink }}">{{ gT("Close") }}</button>
             </div>
         </div>
     </div>
 </div>
 {% endif %}
+

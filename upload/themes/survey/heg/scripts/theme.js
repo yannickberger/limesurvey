@@ -328,6 +328,4 @@ $(document).ready(function nav(e) {
     });
 });
 
-/*$('.modal').on('modal-dialog', function() {
-  $(this).find('[autofocus]').focus();
-});*/
+

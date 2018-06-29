@@ -47,11 +47,11 @@ class __TwigTemplate_8d83bc0acb9b1fc160e83f70431698a53a71a0b7107339bdacb86d2aac3
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["myfname"] ?? null));
         echo "' class='form-group'>
     <div class=\"row\">
-        <label for=\"exampleFormControlTextarea1\" aria-label=\"Remarques\">Remarques</label>
+        <label for=\"exampleFormControlTextarea1\" aria-label=\"Remarques\" tabindex=\"0\">Remarques</label>
         <textarea class=\"form-control\" id=\"remarques_";
         // line 23
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "\" rows=\"2\" aria-label=\"Zone de texte pour remarques\"></textarea>
+        echo "\" rows=\"2\" aria-label=\"Zone de texte pour remarques\" tabindex=\"0\"></textarea>
     </div>
 </div>
 <!-- end of answer_row_other -->
@@ -104,8 +104,8 @@ class __TwigTemplate_8d83bc0acb9b1fc160e83f70431698a53a71a0b7107339bdacb86d2aac3
 <!-- answer_row_other -->
 <div id='javatbd{{myfname}}' class='form-group'>
     <div class=\"row\">
-        <label for=\"exampleFormControlTextarea1\" aria-label=\"Remarques\">Remarques</label>
-        <textarea class=\"form-control\" id=\"remarques_{{name}}\" rows=\"2\" aria-label=\"Zone de texte pour remarques\"></textarea>
+        <label for=\"exampleFormControlTextarea1\" aria-label=\"Remarques\" tabindex=\"0\">Remarques</label>
+        <textarea class=\"form-control\" id=\"remarques_{{name}}\" rows=\"2\" aria-label=\"Zone de texte pour remarques\" tabindex=\"0\"></textarea>
     </div>
 </div>
 <!-- end of answer_row_other -->

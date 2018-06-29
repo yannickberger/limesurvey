@@ -54,7 +54,7 @@ class __TwigTemplate_6ddc3c652f79ee7c38a2fde8c79ec1ea15bcbdd9d3eb82f62d32d4b0483
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "groupdesc", array()));
                 echo " row well space-col\" ";
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "groupdesc", array()));
-                echo ">
+                echo " tabindex=\"0\">
             ";
                 // line 25
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(LS_Twig_Extension::processString($this->getAttribute(($context["aGroup"] ?? null), "description", array())));
@@ -113,7 +113,7 @@ class __TwigTemplate_6ddc3c652f79ee7c38a2fde8c79ec1ea15bcbdd9d3eb82f62d32d4b0483
 {% if aGroup.showgroupinfo == 'D' or aGroup.showgroupinfo == 'B' %}
     {% if aGroup.description != '' %}
         <!-- Group description -->
-        <div class=\"{{ aSurveyInfo.class.groupdesc }} row well space-col\" {{ aSurveyInfo.attr.groupdesc }}>
+        <div class=\"{{ aSurveyInfo.class.groupdesc }} row well space-col\" {{ aSurveyInfo.attr.groupdesc }} tabindex=\"0\">
             {{ processString(aGroup.description) }}
         </div>
     {% endif %}

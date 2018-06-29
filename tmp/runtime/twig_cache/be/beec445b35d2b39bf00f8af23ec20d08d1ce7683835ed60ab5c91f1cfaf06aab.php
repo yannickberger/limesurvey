@@ -69,13 +69,13 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "alertmodal", array()));
             echo "\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "alertmodal", array()));
-            echo ">
+            echo " role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\">
     <div class=\"";
             // line 33
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modaldialog", array()));
             echo "\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modaldialog", array()));
-            echo ">
+            echo " id=\"modal-alert\">
         <div class=\"";
             // line 34
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modalcontent", array()));
@@ -109,7 +109,7 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo ">
                 <p></p>
             </div>
-            <div class=\"";
+            <div id=\"modal-fermer\" class=\"";
             // line 42
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modalfooter", array()));
             echo "\" ";
@@ -120,7 +120,7 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modalfooterlink", array()));
             echo "  class=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modalfooterlink", array()));
-            echo "\" autofocus=\"\">";
+            echo "\">";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(gT("Close"));
             echo "</button>
             </div>
@@ -129,6 +129,9 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
 </div>
 ";
         }
+        // line 49
+        echo "
+";
     }
 
     public function getTemplateName()
@@ -143,7 +146,7 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
 
     public function getDebugInfo()
     {
-        return array (  120 => 43,  114 => 42,  106 => 39,  99 => 37,  93 => 36,  87 => 35,  81 => 34,  75 => 33,  66 => 32,  64 => 31,  60 => 29,  55 => 27,  50 => 26,  48 => 25,  43 => 21,);
+        return array (  133 => 49,  120 => 43,  114 => 42,  106 => 39,  99 => 37,  93 => 36,  87 => 35,  81 => 34,  75 => 33,  66 => 32,  64 => 31,  60 => 29,  55 => 27,  50 => 26,  48 => 25,  43 => 21,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -187,8 +190,8 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
 
 <!-- Bootstrap Modal Alert -->
 {% if(aSurveyInfo.id.alertmodal)%}
-<div id=\"{{ aSurveyInfo.id.alertmodal }}\" class=\"{{ aSurveyInfo.class.alertmodal }}\" {{ aSurveyInfo.attr.alertmodal }}>
-    <div class=\"{{ aSurveyInfo.class.modaldialog }}\" {{ aSurveyInfo.attr.modaldialog }}>
+<div id=\"{{ aSurveyInfo.id.alertmodal }}\" class=\"{{ aSurveyInfo.class.alertmodal }}\" {{ aSurveyInfo.attr.alertmodal }} role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\">
+    <div class=\"{{ aSurveyInfo.class.modaldialog }}\" {{ aSurveyInfo.attr.modaldialog }} id=\"modal-alert\">
         <div class=\"{{ aSurveyInfo.class.modalcontent }}\" {{ aSurveyInfo.attr.modalcontent }} >
             <div class=\"{{ aSurveyInfo.class.modalheader }}\" {{ aSurveyInfo.attr.modalheader }} >
                 <button  {{ aSurveyInfo.attr.modalclosebutton }} class=\"{{ aSurveyInfo.class.modalclosebutton }}\"  >&times;</button>
@@ -197,13 +200,14 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             <div class=\"{{ aSurveyInfo.class.modalbody }}\" {{ aSurveyInfo.attr.modalbody }}>
                 <p></p>
             </div>
-            <div class=\"{{ aSurveyInfo.class.modalfooter }}\" {{ aSurveyInfo.attr.modalfooter }}>
-                <button type=\"button\" {{ aSurveyInfo.attr.modalfooterlink }}  class=\"{{ aSurveyInfo.class.modalfooterlink }}\" autofocus=\"\">{{ gT(\"Close\") }}</button>
+            <div id=\"modal-fermer\" class=\"{{ aSurveyInfo.class.modalfooter }}\" {{ aSurveyInfo.attr.modalfooter }}>
+                <button type=\"button\" {{ aSurveyInfo.attr.modalfooterlink }}  class=\"{{ aSurveyInfo.class.modalfooterlink }}\">{{ gT(\"Close\") }}</button>
             </div>
         </div>
     </div>
 </div>
 {% endif %}
+
 ", "./subviews/messages/bootstrap_alert_modal.twig", "C:\\xampp\\htdocs\\limesurvey\\upload\\themes\\survey\\heg\\views\\subviews\\messages\\bootstrap_alert_modal.twig");
     }
 }

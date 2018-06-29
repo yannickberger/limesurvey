@@ -125,7 +125,7 @@ class __TwigTemplate_db7de7638c548c0b9e16b25e649238120ea579f6ae1e0f782bb524d92c6
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "lsquestiontext", array()));
         echo "\" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "lsquestiontext", array()));
-        echo ">
+        echo " tabindex=\"0\">
         ";
         // line 49
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute(($context["aQuestion"] ?? null), "text", array()));
@@ -207,7 +207,7 @@ class __TwigTemplate_db7de7638c548c0b9e16b25e649238120ea579f6ae1e0f782bb524d92c6
 
 {# The question text as entered by the survey creator in question editing #}
 <div class=\"{{ aSurveyInfo.class.questiontext }}\" {{ aSurveyInfo.attr.questiontext }}>
-    <div id=\"ls-question-text-{{ aQuestion.SGQ }}\" class=\"{{ aSurveyInfo.class.lsquestiontext }}\" {{ aSurveyInfo.attr.lsquestiontext }}>
+    <div id=\"ls-question-text-{{ aQuestion.SGQ }}\" class=\"{{ aSurveyInfo.class.lsquestiontext }}\" {{ aSurveyInfo.attr.lsquestiontext }} tabindex=\"0\">
         {{ aQuestion.text | raw }}
     </div>
 </div>
