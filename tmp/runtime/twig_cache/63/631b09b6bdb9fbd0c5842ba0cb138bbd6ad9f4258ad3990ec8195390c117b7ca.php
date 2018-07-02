@@ -41,68 +41,68 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
 
         // line 16
         echo "
-<!-- answer -->
-";
+ <!-- answer -->
+ ";
         // line 18
         if (($context["withColumn"] ?? null)) {
             // line 19
-            echo "<div class='";
+            echo " <div class='";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["coreClass"] ?? null));
             echo " row'>
     <div class=\"";
             // line 20
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["extraclass"] ?? null));
             echo "\">
-";
+        ";
         } else {
             // line 22
-            echo "<div class='";
+            echo "        <div class='";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["coreClass"] ?? null));
             echo " ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["extraclass"] ?? null));
             echo "'>
-";
+            ";
         }
         // line 24
-        echo "    ";
+        echo "            ";
         if (((($context["prefix"] ?? null) != "") || (($context["suffix"] ?? null) != ""))) {
             // line 25
-            echo "        <div class=\"ls-input-group\">
-    ";
+            echo "            <div class=\"ls-input-group\">
+                ";
         }
         // line 27
-        echo "        <!-- Prefix -->
-        ";
+        echo "                <!-- Prefix -->
+                ";
         // line 28
         if ((($context["prefix"] ?? null) != "")) {
             // line 29
-            echo "            <div class='ls-input-group-extra prefix-text prefix'>";
+            echo "                <div class='ls-input-group-extra prefix-text prefix'>";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["prefix"] ?? null));
             echo "</div>
-        ";
+                ";
         }
         // line 31
         echo "
-        <!-- Input -->
-        <input
-            class=\"form-control ";
+                <!-- Input -->
+                <input
+                class=\"form-control ";
         // line 34
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["kpclass"] ?? null));
         echo "\"
-            type=\"text\"
-            name=\"";
+                type=\"text\"
+                name=\"";
         // line 36
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
-            id=\"answer";
+                id=\"answer";
         // line 37
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
-            value=\"";
+                value=\"";
         // line 38
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["dispVal"] ?? null));
         echo "\"
-            ";
+                ";
         // line 39
         if (($context["inputsize"] ?? null)) {
             echo "size=\"";
@@ -110,42 +110,43 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
             echo "\" ";
         }
         // line 40
-        echo "            ";
+        echo "                ";
         if (($context["maxlength"] ?? null)) {
             echo "maxlength=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["maxlength"] ?? null));
             echo "\" ";
         }
         // line 41
-        echo "            aria-labelledby=\"ls-question-text-";
+        echo "                aria-labelledby=\"ls-question-text-";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["basename"] ?? null));
         echo "\"
-        />
+                />
 
-        <!-- Suffix -->
-        ";
+                <!-- Suffix -->
+                ";
         // line 45
         if ((($context["suffix"] ?? null) != "")) {
             // line 46
-            echo "            <div class='ls-input-group-extra suffix-text suffix'>";
+            echo "                <div class='ls-input-group-extra suffix-text suffix'>";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["suffix"] ?? null));
             echo "</div>
-        ";
+                ";
         }
         // line 48
-        echo "    ";
+        echo "                ";
         if (((($context["prefix"] ?? null) != "") || (($context["suffix"] ?? null) != ""))) {
             // line 49
-            echo "        </div>
-    ";
+            echo "            </div>
+            ";
         }
         // line 51
+        echo "            ";
         if (($context["withColumn"] ?? null)) {
             // line 52
-            echo "    </div>
-</div>
+            echo "        </div>
+    </div>
 
-";
+    ";
         } else {
             // line 56
             echo "</div>
@@ -168,7 +169,7 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
 
     public function getDebugInfo()
     {
-        return array (  155 => 58,  151 => 56,  145 => 52,  143 => 51,  139 => 49,  136 => 48,  130 => 46,  128 => 45,  120 => 41,  113 => 40,  107 => 39,  103 => 38,  99 => 37,  95 => 36,  90 => 34,  85 => 31,  79 => 29,  77 => 28,  74 => 27,  70 => 25,  67 => 24,  59 => 22,  54 => 20,  49 => 19,  47 => 18,  43 => 16,);
+        return array (  156 => 58,  152 => 56,  146 => 52,  143 => 51,  139 => 49,  136 => 48,  130 => 46,  128 => 45,  120 => 41,  113 => 40,  107 => 39,  103 => 38,  99 => 37,  95 => 36,  90 => 34,  85 => 31,  79 => 29,  77 => 28,  74 => 27,  70 => 25,  67 => 24,  59 => 22,  54 => 20,  49 => 19,  47 => 18,  43 => 16,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -195,47 +196,47 @@ class __TwigTemplate_9955497cbd4d055c34258655f9e3ca36088a5c4feb75c542301002008c3
  * \$maxlength
  * \$checkconditionFunction
  */
-#}
+ #}
 
-<!-- answer -->
-{% if withColumn %}
-<div class='{{ coreClass }} row'>
+ <!-- answer -->
+ {% if withColumn %}
+ <div class='{{ coreClass }} row'>
     <div class=\"{{ extraclass }}\">
-{% else %}
-<div class='{{ coreClass }} {{ extraclass }}'>
-{% endif %}
-    {% if prefix != '' or suffix != '' %}
-        <div class=\"ls-input-group\">
-    {% endif %}
-        <!-- Prefix -->
-        {% if prefix != '' %}
-            <div class='ls-input-group-extra prefix-text prefix'>{{ prefix }}</div>
-        {% endif %}
+        {% else %}
+        <div class='{{ coreClass }} {{ extraclass }}'>
+            {% endif %}
+            {% if prefix != '' or suffix != '' %}
+            <div class=\"ls-input-group\">
+                {% endif %}
+                <!-- Prefix -->
+                {% if prefix != '' %}
+                <div class='ls-input-group-extra prefix-text prefix'>{{ prefix }}</div>
+                {% endif %}
 
-        <!-- Input -->
-        <input
-            class=\"form-control {{ kpclass }}\"
-            type=\"text\"
-            name=\"{{ name }}\"
-            id=\"answer{{ name }}\"
-            value=\"{{ dispVal }}\"
-            {% if inputsize %}size=\"{{ inputsize }}\" {% endif %}
-            {% if maxlength %}maxlength=\"{{ maxlength }}\" {% endif %}
-            aria-labelledby=\"ls-question-text-{{ basename }}\"
-        />
+                <!-- Input -->
+                <input
+                class=\"form-control {{ kpclass }}\"
+                type=\"text\"
+                name=\"{{ name }}\"
+                id=\"answer{{ name }}\"
+                value=\"{{ dispVal }}\"
+                {% if inputsize %}size=\"{{ inputsize }}\" {% endif %}
+                {% if maxlength %}maxlength=\"{{ maxlength }}\" {% endif %}
+                aria-labelledby=\"ls-question-text-{{ basename }}\"
+                />
 
-        <!-- Suffix -->
-        {% if suffix != '' %}
-            <div class='ls-input-group-extra suffix-text suffix'>{{ suffix }}</div>
-        {% endif %}
-    {% if prefix != '' or suffix != '' %}
+                <!-- Suffix -->
+                {% if suffix != '' %}
+                <div class='ls-input-group-extra suffix-text suffix'>{{ suffix }}</div>
+                {% endif %}
+                {% if prefix != '' or suffix != '' %}
+            </div>
+            {% endif %}
+            {% if withColumn %}
         </div>
-    {% endif %}
-{% if withColumn %}
     </div>
-</div>
 
-{% else %}
+    {% else %}
 </div>
 {% endif %}
 

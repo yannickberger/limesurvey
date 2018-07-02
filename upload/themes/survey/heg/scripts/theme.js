@@ -315,14 +315,16 @@ var ThemeScripts = function(){
 };
 
 //Fonction permettant la navigation par raccourcis clavier
-$(document).ready(function nav(e) {
-    $(document).keypress(function(e) {
-        e.preventDefault();
-        if(e.key == "m" && e.ctrlKey) {
-            //alert("keydown");
+$(document).ready(function () {
+    $(document).keydown(function(event) {
+        //Raccourcis CTRL+RIGHT
+        if((event.ctrlKey && event.which == 39 )) {
+            //e.preventDefault();
             $("#ls-button-submit").trigger('click');
         }
-        if(e.key == "b" && e.ctrlKey){
+        //Raccourcis CTRL+LEFT
+        if((event.ctrlKey && event.which == 37)){
+            //e.preventDefault();
             $("#ls-button-previous").trigger('click');
         }
     });

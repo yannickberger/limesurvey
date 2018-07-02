@@ -47,7 +47,7 @@ class __TwigTemplate_4232f570f55addecda34583af5004542ef468cf141b792485e4a7ea4f26
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "helpcontainer", array()));
         echo "  text-info col-xs-12 \" ";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "helpcontainer", array()));
-        echo " tabindex=\"0\">
+        echo ">
     ";
         // line 22
         if ($this->getAttribute($this->getAttribute(($context["aQuestion"] ?? null), "help", array()), "show", array())) {
@@ -118,7 +118,7 @@ class __TwigTemplate_4232f570f55addecda34583af5004542ef468cf141b792485e4a7ea4f26
 #}
 
 <!-- Survey question help -->
-<div class=\"{{ aSurveyInfo.class.helpcontainer }}  text-info col-xs-12 \" {{ aSurveyInfo.attr.helpcontainer }} tabindex=\"0\">
+<div class=\"{{ aSurveyInfo.class.helpcontainer }}  text-info col-xs-12 \" {{ aSurveyInfo.attr.helpcontainer }}>
     {% if aQuestion.help.show %}
         <div class=\"{{ aSurveyInfo.class.lsquestionhelp }}\">
             {{ aQuestion.help.text | raw }}

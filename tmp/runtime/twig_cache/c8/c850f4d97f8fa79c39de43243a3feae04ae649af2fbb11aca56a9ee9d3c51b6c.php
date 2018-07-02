@@ -53,7 +53,7 @@ class __TwigTemplate_b8dea4479cdb29dcdb873c3c41d3143d5e03d7f535689dae5d54cdc3d99
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["coreClass"] ?? null));
         echo " container-fluid\" role=\"radio-group\" aria-labelledby=\"ls-question-text-";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "\" tabindex=\"0\">
+        echo "\">
 \t
 \t\t";
         // line 17
@@ -122,7 +122,7 @@ class __TwigTemplate_b8dea4479cdb29dcdb873c3c41d3143d5e03d7f535689dae5d54cdc3d99
 
 <!-- answer -->
 {{ sTimer }}
-<div class=\"{{coreClass}} container-fluid\" role=\"radio-group\" aria-labelledby=\"ls-question-text-{{name}}\" tabindex=\"0\">
+<div class=\"{{coreClass}} container-fluid\" role=\"radio-group\" aria-labelledby=\"ls-question-text-{{name}}\">
 \t
 \t\t{# rows/answer_row.php #}
 \t\t{{sRows}}
