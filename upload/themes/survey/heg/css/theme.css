@@ -802,3 +802,7 @@ label::after{background-color:#337ab7}
 .panel-collapse{
     color: black !important;
 }
+
+input{
+    margin-bottom: 8px !important;
+}
