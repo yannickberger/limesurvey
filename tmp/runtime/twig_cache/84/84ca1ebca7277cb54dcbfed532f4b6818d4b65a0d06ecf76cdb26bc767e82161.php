@@ -15,7 +15,7 @@ class __TwigTemplate_d9eba7f7d8a9b431bbab617b4ea14d0ee199130f9858fb537bb0a6ba996
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 29, "for" => 50);
+        $tags = array("if" => 29, "for" => 51);
         $filters = array();
         $functions = array("gT" => 33);
 
@@ -94,28 +94,27 @@ class __TwigTemplate_d9eba7f7d8a9b431bbab617b4ea14d0ee199130f9858fb537bb0a6ba996
         // line 45
         echo "
 ";
-        // line 47
+        // line 48
         if ($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "errorHtml", array()), "show", array())) {
-            // line 48
-            echo "    <p class=' ";
-            echo " fade in alert-dismissible alert alert-danger ";
+            // line 49
+            echo "    <p class=' {Uncomment to hide when popup is on { aSurveyInfo.errorHtml.hiddenClass } } fade in alert-dismissible alert alert-danger ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "errorHtml", array()));
             echo " ' role='alert'>
         <button  ";
-            // line 49
+            // line 50
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "errorHtmlbutton", array()));
             echo " class=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "errorHtmlbutton", array()));
             echo " close\" ><span aria-hidden=\"true\">×</span></button>
     ";
-            // line 50
+            // line 51
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "errorHtml", array()), "messages", array()));
             foreach ($context['_seq'] as $context["_key"] => $context["aMessage"]) {
-                // line 51
+                // line 52
                 echo "        <!-- Error Html warnings -->
             ";
-                // line 52
+                // line 53
                 echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($context["aMessage"]);
                 echo "
             <br/>
@@ -124,7 +123,7 @@ class __TwigTemplate_d9eba7f7d8a9b431bbab617b4ea14d0ee199130f9858fb537bb0a6ba996
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['aMessage'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 55
+            // line 56
             echo "    </p>
 ";
         }
@@ -142,7 +141,7 @@ class __TwigTemplate_d9eba7f7d8a9b431bbab617b4ea14d0ee199130f9858fb537bb0a6ba996
 
     public function getDebugInfo()
     {
-        return array (  128 => 55,  119 => 52,  116 => 51,  112 => 50,  106 => 49,  100 => 48,  98 => 47,  95 => 45,  89 => 42,  83 => 41,  77 => 40,  74 => 39,  72 => 38,  69 => 36,  63 => 33,  57 => 32,  51 => 31,  48 => 30,  46 => 29,  43 => 27,);
+        return array (  127 => 56,  118 => 53,  115 => 52,  111 => 51,  105 => 50,  100 => 49,  98 => 48,  95 => 45,  89 => 42,  83 => 41,  77 => 40,  74 => 39,  72 => 38,  69 => 36,  63 => 33,  57 => 32,  51 => 31,  48 => 30,  46 => 29,  43 => 27,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -201,8 +200,9 @@ class __TwigTemplate_d9eba7f7d8a9b431bbab617b4ea14d0ee199130f9858fb537bb0a6ba996
 {% endif %}
 
 {# Error Html warnings #}
+{# Pastille d'erreur rouge qui popup par ex. quand on n entre pas les reponses a une question mandatory#}
 {% if aSurveyInfo.errorHtml.show %}
-    <p class=' {# Uncomment to hide when popup is on { aSurveyInfo.errorHtml.hiddenClass } #} fade in alert-dismissible alert alert-danger {{ aSurveyInfo.class.errorHtml }} ' role='alert'>
+    <p class=' {Uncomment to hide when popup is on { aSurveyInfo.errorHtml.hiddenClass } } fade in alert-dismissible alert alert-danger {{ aSurveyInfo.class.errorHtml }} ' role='alert'>
         <button  {{ aSurveyInfo.attr.errorHtmlbutton }} class=\"{{ aSurveyInfo.class.errorHtmlbutton }} close\" ><span aria-hidden=\"true\">×</span></button>
     {% for aMessage in aSurveyInfo.errorHtml.messages  %}
         <!-- Error Html warnings -->

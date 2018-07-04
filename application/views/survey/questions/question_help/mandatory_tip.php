@@ -4,7 +4,7 @@
  * called from em_manager_helper
  */
 ?>
-<div class='ls-question-mandatory text-danger' role='alert'>
+<div tabindex="0" class='ls-question-mandatory text-danger' role='alert'>
     <span class='fa fa-exclamation-circle' aria-hidden="true"></span>
-    <?php echo $sMandatoryText; ?>
+    <?php echo $sMandatoryText;?> 
 </div>

@@ -26,7 +26,7 @@
 
      Please, use custom.js
 
-*/
+     */
 
 
 /**
@@ -43,8 +43,8 @@ var ThemeScripts = function(){
      * The function focusFirst puts the Focus on the first non-hidden element in the Survey.
      * Normally this is the first input field (the first answer).
      */
-    var focusFirst = function focusFirst()
-    {
+     var focusFirst = function focusFirst()
+     {
         $('#limesurvey :input:visible:enabled:first').focus();
     };
 
@@ -52,14 +52,14 @@ var ThemeScripts = function(){
      * fix padding of body according to navbar-fixed-top
      * in endpage and in $(window).resize
      */
-    var fixBodyPadding = function fixBodyPadding(){
+     var fixBodyPadding = function fixBodyPadding(){
         /* The 60 px is fixed in template.css */
         $('body').css('padding-top', Math.round($('.navbar-fixed-top').height()) +'px');
     };
     /**
      * Set suffix/prefix clone for little screen (at top)
      */
-    var sliderSuffixClone = function sliderSuffixClone(){
+     var sliderSuffixClone = function sliderSuffixClone(){
         $('.numeric-multi .slider-item .slider-right').each(function(){
             var colWidth='12';
             
@@ -79,8 +79,8 @@ var ThemeScripts = function(){
      * Some can be needed if contain only js
      * Some are not really needed : little margin only is shown
      */
-    var hideEmptyPart = function hideEmptyPart()
-    {
+     var hideEmptyPart = function hideEmptyPart()
+     {
         $('.question-help-container').each(function(){
             if($(this).text().trim()==''){/* Only if have only script tag inside or empty tag */
                 $(this).addClass('hidden');
@@ -138,8 +138,8 @@ var ThemeScripts = function(){
          * @see https://learn.jquery.com/using-jquery-core/document-ready/
          * Also it will run on a complete pageload via the internal pjax system
          */
-        $(document).on('ready pjax:scriptcomplete',function()
-        {
+         $(document).on('ready pjax:scriptcomplete',function()
+         {
             /* Uncomment below if you want to use the focusFirst function */
             //focusFirst();
             /* Some function are launched in endpage.pstpl */
@@ -223,10 +223,10 @@ var ThemeScripts = function(){
          * Code included inside this will run each time windows is resized
          * @see https://api.jquery.com/resize/
          */
-        $(window).resize(function () {
+         $(window).resize(function () {
             fixBodyPadding();
         });
-        var onkeyEventInput = function(e){
+         var onkeyEventInput = function(e){
             var code = (e.keyCode ? e.keyCode : e.which);
             if (code==13 && e.ctrlKey != true) {
                 e.preventDefault();
@@ -328,6 +328,28 @@ $(document).ready(function () {
             $("#ls-button-previous").trigger('click');
         }
     });
+});
+
+//Fonction qui permet de vérifier si une checkbox est cochée
+//Si la textbox est coché le text aria-checked est assigne a TRUE
+$(document).ready(function(){
+    $("input").click(function(){
+        if ($(this).attr("aria-checked") == "false"){
+            $(this).attr("aria-checked", "true");
+        } else {
+            $(this).attr("aria-checked", "false");
+        }
+    });
+});
+
+//Fonction qui remet le focus sur la premiere option de reponse apres avoir clique sur "Fermer" dans la modal
+$(document).ready(function(){
+    $( "#modal-fermer" ).click(function() {
+        console.log($('.answer-item'));
+        if($('.answer-item').length != 0){
+            $('.answer-item').first().focus();
+        }       
+  });
 });
 
 

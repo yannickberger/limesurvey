@@ -69,7 +69,7 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "alertmodal", array()));
             echo "\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "alertmodal", array()));
-            echo " role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\">
+            echo " role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\" aria-modal=\"true\">
     <div class=\"";
             // line 33
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modaldialog", array()));
@@ -88,12 +88,12 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
             echo "\" ";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modalheader", array()));
             echo " >
-                <button  ";
+                <!-- <button  ";
             // line 36
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "attr", array()), "modalclosebutton", array()));
             echo " class=\"";
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modalclosebutton", array()));
-            echo "\"  >&times;</button>
+            echo "\"  >&times;</button> -->
                 <div class=\"";
             // line 37
             echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed($this->getAttribute($this->getAttribute(($context["aSurveyInfo"] ?? null), "class", array()), "modaltitle", array()));
@@ -190,11 +190,11 @@ class __TwigTemplate_da00b2217e221938c65c1e7fd8e528aa3c45b87e5a89995a778d882742b
 
 <!-- Bootstrap Modal Alert -->
 {% if(aSurveyInfo.id.alertmodal)%}
-<div id=\"{{ aSurveyInfo.id.alertmodal }}\" class=\"{{ aSurveyInfo.class.alertmodal }}\" {{ aSurveyInfo.attr.alertmodal }} role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\">
+<div id=\"{{ aSurveyInfo.id.alertmodal }}\" class=\"{{ aSurveyInfo.class.alertmodal }}\" {{ aSurveyInfo.attr.alertmodal }} role=\"dialog\" aria-labelledby=\"Message d'alerte\" tabindex=\"-1\" aria-modal=\"true\">
     <div class=\"{{ aSurveyInfo.class.modaldialog }}\" {{ aSurveyInfo.attr.modaldialog }} id=\"modal-alert\">
         <div class=\"{{ aSurveyInfo.class.modalcontent }}\" {{ aSurveyInfo.attr.modalcontent }} >
             <div class=\"{{ aSurveyInfo.class.modalheader }}\" {{ aSurveyInfo.attr.modalheader }} >
-                <button  {{ aSurveyInfo.attr.modalclosebutton }} class=\"{{ aSurveyInfo.class.modalclosebutton }}\"  >&times;</button>
+                <!-- <button  {{ aSurveyInfo.attr.modalclosebutton }} class=\"{{ aSurveyInfo.class.modalclosebutton }}\"  >&times;</button> -->
                 <div class=\"{{ aSurveyInfo.class.modaltitle }}\" {{ aSurveyInfo.attr.modaltitle }}>&nbsp;</div>
             </div>
             <div class=\"{{ aSurveyInfo.class.modalbody }}\" {{ aSurveyInfo.attr.modalbody }}>

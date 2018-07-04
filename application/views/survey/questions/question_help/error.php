@@ -4,6 +4,6 @@
  * @var $message
  */
 ?>
-<div class="alert alert-warning error <?php echo $classes; ?>" role="alert">
+<div tabindex="0"> class="alert alert-warning error <?php echo $classes; ?>" role="alert">
     <?php echo $message;?>
 </div>

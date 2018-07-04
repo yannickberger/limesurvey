@@ -1,0 +1,11 @@
+.form-inline .form-group {
+
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+
+}
+.form-group {
+    margin-bottom: 5px;
+}
+ 

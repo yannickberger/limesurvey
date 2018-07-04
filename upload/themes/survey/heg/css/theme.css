@@ -798,3 +798,7 @@ label::after{background-color:#337ab7}
 .dropdown-toggle{
     color:white !important;
 }
+
+.panel-collapse{
+    color: black !important;
+}
