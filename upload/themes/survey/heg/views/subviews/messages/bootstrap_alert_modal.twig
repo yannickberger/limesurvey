@@ -28,6 +28,7 @@
 {% endif %}
 
 <!-- Bootstrap Modal Alert -->
+
 {% if(aSurveyInfo.id.alertmodal)%}
 <div id="{{ aSurveyInfo.id.alertmodal }}" class="{{ aSurveyInfo.class.alertmodal }}" {{ aSurveyInfo.attr.alertmodal }} role="dialog" aria-labelledby="Message d'alerte" tabindex="-1" aria-modal="true">
     <div class="{{ aSurveyInfo.class.modaldialog }}" {{ aSurveyInfo.attr.modaldialog }} id="modal-alert">

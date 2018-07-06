@@ -328,12 +328,24 @@ $(document).ready(function () {
             $("#ls-button-previous").trigger('click');
         }
     });
+    $(document).keypress(function(event) {
+        //Raccourcis CTRL+RIGHT
+        if((event.ctrlKey && event.which == 39 )) {
+            //e.preventDefault();
+            $("#ls-button-submit").trigger('click');
+        }
+        //Raccourcis CTRL+LEFT
+        if((event.ctrlKey && event.which == 37)){
+            //e.preventDefault();
+            $("#ls-button-previous").trigger('click');
+        }
+    });
 });
 
 //Fonction qui permet de vérifier si une checkbox est cochée
 //Si la textbox est coché le text aria-checked est assigne a TRUE
 $(document).ready(function(){
-    $("input").click(function(){
+    $("li input").click(function(){
         if ($(this).attr("aria-checked") == "false"){
             $(this).attr("aria-checked", "true");
         } else {
@@ -343,13 +355,11 @@ $(document).ready(function(){
 });
 
 //Fonction qui remet le focus sur la premiere option de reponse apres avoir clique sur "Fermer" dans la modal
-$(document).ready(function(){
+/*$(document).ready(function(){
     $( "#modal-fermer" ).click(function() {
         console.log($('.answer-item'));
         if($('.answer-item').length != 0){
             $('.answer-item').first().focus();
         }       
-  });
-});
-
-
+    });
+});*/

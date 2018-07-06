@@ -1,0 +1,23 @@
+.form-inline .form-group {
+
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+
+}
+.form-group {
+    margin-bottom: 5px;
+}
+
+#slider-text-callout {
+    font-size: 85%;
+    font-weight: 400;
+    height: 20px;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: -25px;
+    min-width: 100px;
+    width: auto;
+}
+ 
