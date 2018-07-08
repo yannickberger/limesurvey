@@ -40,17 +40,18 @@ question_template_attribute.horizontal_scroll   : {{question_template_attribute.
             <div class="form-group othertext-label-checkox-container radio-item">
                <fieldset aria-label={{answer}} >
                <input
+                    role="radio"
                     tabindex="0"
                     class="radio-input"
                     type="radio"
                     name="{{name}}"
-                    aria-label="Bouton radio {{answer}}
+                    aria-labelledby="radio-{{answer}}"
                     id="answer{{name}}{{code}}"
                     value={{code}}
                     {{fChecked}}
                 />
                     <label for="answer{{ name }}">
-                        <span class="" aria-hidden="true"></span> {{ answer }}
+                        <span id="radio-{{answer}}" class="radio-answer" aria-hidden="true"></span> {{ answer }}
                     </label>
                 </fieldset>
             </div>

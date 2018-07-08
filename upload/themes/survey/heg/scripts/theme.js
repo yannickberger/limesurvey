@@ -363,3 +363,116 @@ $(document).ready(function(){
         }       
     });
 });*/
+
+
+$(document).ready(function() {
+
+   // A function to add or remove rows of an Array (Multi Flexible)(Text) question
+    function varLengthArray(qID) {
+        
+        if ($('#question'+qID+'').length > 0) {
+            
+            // The HTML content of the Add/Remove elements - modify as you wish
+            var addContent = '[+]';
+            var removeContent = '[-]';
+
+            // Create the Add and Remove elements & insert them
+            var el1 = document.createElement('div');
+            el1.setAttribute('id','addButton'+qID);
+            document.body.appendChild(el1);
+            var el2 = document.createElement('div');
+            el2.setAttribute('id','removeButton'+qID);
+            document.body.appendChild(el2);
+
+            // Move them to after the array
+            $( 'div#addButton'+qID ).appendTo($( '#question' + qID + ' table.ls-answers' ).parent());
+            $( 'div#removeButton'+qID ).appendTo($( '#question' + qID + ' table.ls-answers' ).parent());
+
+            // Insert their HTML
+            $( 'div#addButton'+qID ).html( addContent );
+            $( 'div#removeButton'+qID ).html( removeContent );
+
+            // Style the elements - you can modify here if you wish
+            $( 'div#addButton'+qID ).css({
+                'margin':'10px 0 0 10px',
+                'padding':'1px',
+                'text-align':'center',
+                'font-weight':'bold',
+                'width':'auto',
+                'cursor':'pointer',
+                'float':'left'
+            });
+
+            $( 'div#removeButton'+qID ).css({
+                'margin':'10px 0 0 10px',
+                'padding':'1px',
+                'text-align':'center',
+                'font-weight':'bold',
+                'width':'auto',
+                'cursor':'pointer',
+                'float':'left'
+            });
+
+            // Initially hide the Remove element
+            $( 'div#removeButton'+qID ).hide();
+
+            // Call the functions below when clicked
+            $( 'div#addButton'+qID ).click(function (event) {
+                addRow(qID);
+            });
+            $( 'div#removeButton'+qID ).click(function (event) {
+                removeRow(qID);
+            });
+
+            // Function to add a row, also shows the Remove element and hides the
+            //Add element if all rows are shown
+            function addRow(qID) {
+                var arrayRow = '#question' + qID + ' table.ls-answers tr.subquestion-list';
+                var rowCount = $( arrayRow ).size() - 1;
+                $( arrayRow + '[name="hidden"]:first' ).attr('name', 'visible').show();
+                $( 'div#removeButton'+qID ).show();
+                if ( $( arrayRow + ':eq(' + rowCount + ')' ).attr('name') == 'visible' )  {
+                    $( 'div#addButton'+qID ).hide();
+                }
+            }
+
+            // Function to remove a row, also clears the contents of the removed row,
+            // shows the Add element if the last row is hidden and hides the Remove
+            // element if only the first row is shown
+            function removeRow(qID) {
+                var arrayRow = '#question' + qID + ' table.ls-answers tr.subquestion-list';
+                var rowCount = $( arrayRow ).size() - 1;
+                $( arrayRow + '[name="visible"]:last input[type="text"]' ).val('');
+                $( arrayRow + '[name="visible"]:last' ).attr('name', 'hidden').hide();
+                $( 'div#addButton'+qID ).show();
+                if ( $( arrayRow + ':eq(1)' ).attr('name') == 'hidden' )  {
+                    $( 'div#removeButton'+qID ).hide();
+                }
+            }
+
+            // Just some initialization stuff
+            var arrayRow = '#question' + qID + ' table.ls-answers tr.subquestion-list';
+            var rowCount = '';
+
+            // Initially hide all except first row or any rows with populated inputs
+            $( arrayRow ).each(function(i) {
+                if ( i > 0 ) {
+                    // We also need to give the hidden rows a name cause IE doesn't
+                    // recognize jQuery :visible selector consistently
+                    $( this ).attr('name', 'hidden').hide();
+
+                    $('input[type=text]', this).each(function(i) {
+                        if ($(this).attr('value') != '') {
+                            $(this).parents('tbody:eq(0)').attr('name', 'visible').show();
+                            $( 'div#removeButton'+qID ).show();
+                        }
+                    });
+                    rowCount = i;
+                }
+            });
+        }
+    }
+
+    // Call the function with a question ID
+    varLengthArray(561);
+});

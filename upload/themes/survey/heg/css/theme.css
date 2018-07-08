@@ -789,14 +789,17 @@ label::after{background-color:#337ab7}
 }
 
 .ls-link-action{
-    color: white !important;
+    color: #000000 !important;
+    font-size: 1.6rem;
 }
 
 .animate{
-    color:white !important;
+    color:#000000 !important;
+    font-size: 1.6rem;
 }
 .dropdown-toggle{
-    color:white !important;
+    color:#000000 !important;
+    font-size: 1.6rem;
 }
 
 .panel-collapse{
@@ -809,4 +812,5 @@ input{
 
 .dropdown-sub-menu a {
     color: black !important;
+    font-size: 1.2rem;
 }
