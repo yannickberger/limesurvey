@@ -52,37 +52,43 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
         role=\"radio\"
         type=\"radio\"
         tabindex=\"0\"
-        value=\"";
+        aria-labelledby=\"radio-";
         // line 19
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
+        echo "\"
+        value=\"";
+        // line 20
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\"
         name=\"";
-        // line 20
+        // line 21
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
         id=\"answer";
-        // line 21
+        // line 22
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\"
         ";
-        // line 22
+        // line 23
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["checkedState"] ?? null));
         echo "
         onclick=\"if (document.getElementById('answer";
-        // line 23
+        // line 24
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "othertext') != null) document.getElementById('answer";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "othertext').value='';checkconditions(this.value, this.name, this.type)\"
      />
-    <label for=\"answer";
-        // line 25
+    <label id=\"radio-";
+        // line 26
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
+        echo "\" for=\"answer";
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\" class=\"control-label radio-label\">
         ";
-        // line 26
+        // line 27
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo "
     </label>
@@ -103,7 +109,7 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
 
     public function getDebugInfo()
     {
-        return array (  86 => 26,  81 => 25,  74 => 23,  70 => 22,  65 => 21,  61 => 20,  57 => 19,  47 => 14,  43 => 12,);
+        return array (  92 => 27,  85 => 26,  78 => 24,  74 => 23,  69 => 22,  65 => 21,  61 => 20,  57 => 19,  47 => 14,  43 => 12,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -134,13 +140,14 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
         role=\"radio\"
         type=\"radio\"
         tabindex=\"0\"
+        aria-labelledby=\"radio-{{answer}}\"
         value=\"{{ code }}\"
         name=\"{{ name }}\"
         id=\"answer{{ name }}{{ code }}\"
         {{ checkedState }}
         onclick=\"if (document.getElementById('answer{{ name }}othertext') != null) document.getElementById('answer{{ name }}othertext').value='';checkconditions(this.value, this.name, this.type)\"
      />
-    <label for=\"answer{{ name }}{{ code }}\" class=\"control-label radio-label\">
+    <label id=\"radio-{{answer}}\" for=\"answer{{ name }}{{ code }}\" class=\"control-label radio-label\">
         {{ answer }}
     </label>
 </li>

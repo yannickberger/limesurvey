@@ -817,3 +817,7 @@ label::after{background-color:#337ab7}
     color: black !important;
     font-size: 1.2rem;
 }
+
+.survey-welcome{
+    color: black !important;
+}
