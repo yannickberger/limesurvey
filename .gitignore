@@ -123,13 +123,13 @@ Vagrantfile
 !themes/survey/*/files/print_img_radio.png
 
 ##Excluded all master folder
-/admin/*
-/application/*
-/assets/*
-/docs/*
-/framework/*
-/installer/*
-/locale/*
-/plugins/*
-/tests/*
-/third_party/*
+#/admin/*
+#/application/*
+#/assets/*
+#/docs/*
+#/framework/*
+#/installer/*
+#/locale/*
+#/plugins/*
+#/tests/*
+#/third_party/*
