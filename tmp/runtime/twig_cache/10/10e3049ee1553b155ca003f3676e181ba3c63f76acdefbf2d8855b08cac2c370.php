@@ -15,13 +15,13 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $tags = array("if" => 39);
+        $tags = array();
         $filters = array();
         $functions = array();
 
         try {
             $this->env->getExtension('Twig_Extension_Sandbox')->checkSecurity(
-                array('if'),
+                array(),
                 array(),
                 array()
             );
@@ -39,74 +39,54 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
             throw $e;
         }
 
-        // line 27
-        echo "
-";
-        // line 35
+        // line 12
         echo "
 <!-- answer_row -->
-<div id='javatbd";
-        // line 37
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "' class=\"form-group answer-item radio-item anwser-item\">
-    <div class=\"row\">
-        <!-- <li id=\"javatbd";
-        // line 39
+<li id='javatbd";
+        // line 14
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["myfname"] ?? null));
-        echo "\" class=\"button-item btn btn-primary ";
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["button_size_class"] ?? null));
-        echo " ";
-        if ((($context["fChecked"] ?? null) != "")) {
-            echo " active ";
-        }
-        echo "\"> -->
-            <div class=\"form-group othertext-label-checkox-container radio-item\">
-               <fieldset aria-label=";
-        // line 41
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
+        echo "' class='form-group answer-item radio-item' ";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["sDisplayStyle"] ?? null));
         echo " >
-               <input
-                    role=\"radio\"
-                    tabindex=\"0\"
-                    class=\"radio-input\"
-                    type=\"radio\"
-                    name=\"";
-        // line 47
+    <input
+        role=\"radio\"
+        type=\"radio\"
+        tabindex=\"0\"
+        value=\"";
+        // line 19
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
+        echo "\"
+        name=\"";
+        // line 20
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo "\"
-                    aria-labelledby=\"radio-";
-        // line 48
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
-        echo "\"
-                    id=\"answer";
-        // line 49
+        id=\"answer";
+        // line 21
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
         echo "\"
-                    value=";
-        // line 50
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
+        ";
+        // line 22
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["checkedState"] ?? null));
         echo "
-                    ";
-        // line 51
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["fChecked"] ?? null));
-        echo "
-                />
-                    <label for=\"answer";
-        // line 53
+        onclick=\"if (document.getElementById('answer";
+        // line 23
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
-        echo "\">
-                        <span id=\"radio-";
-        // line 54
-        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
-        echo "\" class=\"radio-answer\" aria-hidden=\"true\"></span> ";
+        echo "othertext') != null) document.getElementById('answer";
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
+        echo "othertext').value='';checkconditions(this.value, this.name, this.type)\"
+     />
+    <label for=\"answer";
+        // line 25
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["name"] ?? null));
+        echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["code"] ?? null));
+        echo "\" class=\"control-label radio-label\">
+        ";
+        // line 26
         echo $this->env->getExtension('Twig_Extension_Sandbox')->ensureToStringAllowed(($context["answer"] ?? null));
         echo "
-                    </label>
-                </fieldset>
-            </div>
-    </div>
-</div>
+    </label>
+</li>
 <!-- end of answer_row -->
 ";
     }
@@ -123,7 +103,7 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
 
     public function getDebugInfo()
     {
-        return array (  101 => 54,  97 => 53,  92 => 51,  88 => 50,  83 => 49,  79 => 48,  75 => 47,  66 => 41,  55 => 39,  50 => 37,  46 => 35,  43 => 27,);
+        return array (  86 => 26,  81 => 25,  74 => 23,  70 => 22,  65 => 21,  61 => 20,  57 => 19,  47 => 14,  43 => 12,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -137,64 +117,33 @@ class __TwigTemplate_c3d9987eac7533ee18f0d51d368ab932b6da47fb7d0c9717ccd9bac46d3
     public function getSourceContext()
     {
         return new Twig_Source("{#
-
-!!!! BECAREFUL: ONLY FOR TESTING !!!!!
-!!!! DON'T START TO TRANSLATE ALL VIEWS BASED ON THIS MODEL !!!!!
-
-!!!! IT WILL PROBABLY FIRST NEED TO CHANGE  THE TWIG TEMPLATE SYNTAX TO AVOID CONFLICT WITH EXPRESSION MANAGER !!!!
-
 /**
  * Multiple Choice Html : item row
  *
- * @var hiddenfield
- * @var name
- * @var code
- * @var answer
- * @var checkedState
- * @var sCheckconditionFunction
- * @var myfname
- * @var sValue
- **** Additional attributes:
- * @var question_template_attribute.fix_width
- * @var question_template_attribute.fix_height
- * @var question_template_attribute.keep_aspect
- * @var question_template_attribute.crop_or_resize
- * @var question_template_attribute.horizontal_scroll
+ * @var \$name
+ * @var \$code
+ * @var \$answer
+ * @var \$checkedState
+ * @var \$myfname
  */
 #}
 
-{#<p>DEBUG:<br>
-question_template_attribute.fix_width           : {{question_template_attribute.fix_width}}<br/>
-question_template_attribute.fix_height          : {{question_template_attribute.fix_height}}<br/>
-question_template_attribute.keep_aspect         : {{question_template_attribute.keep_aspect}}<br/>
-question_template_attribute.crop_or_resize      : {{question_template_attribute.crop_or_resize}}<br/>
-question_template_attribute.horizontal_scroll   : {{question_template_attribute.horizontal_scroll}}<br/>
-</p>#}
-
 <!-- answer_row -->
-<div id='javatbd{{ name }}' class=\"form-group answer-item radio-item anwser-item\">
-    <div class=\"row\">
-        <!-- <li id=\"javatbd{{ myfname }}\" class=\"button-item btn btn-primary {{ button_size_class }} {% if fChecked!='' %} active {% endif %}\"> -->
-            <div class=\"form-group othertext-label-checkox-container radio-item\">
-               <fieldset aria-label={{answer}} >
-               <input
-                    role=\"radio\"
-                    tabindex=\"0\"
-                    class=\"radio-input\"
-                    type=\"radio\"
-                    name=\"{{name}}\"
-                    aria-labelledby=\"radio-{{answer}}\"
-                    id=\"answer{{name}}{{code}}\"
-                    value={{code}}
-                    {{fChecked}}
-                />
-                    <label for=\"answer{{ name }}\">
-                        <span id=\"radio-{{answer}}\" class=\"radio-answer\" aria-hidden=\"true\"></span> {{ answer }}
-                    </label>
-                </fieldset>
-            </div>
-    </div>
-</div>
+<li id='javatbd{{ myfname }}' class='form-group answer-item radio-item' {{ sDisplayStyle }} >
+    <input
+        role=\"radio\"
+        type=\"radio\"
+        tabindex=\"0\"
+        value=\"{{ code }}\"
+        name=\"{{ name }}\"
+        id=\"answer{{ name }}{{ code }}\"
+        {{ checkedState }}
+        onclick=\"if (document.getElementById('answer{{ name }}othertext') != null) document.getElementById('answer{{ name }}othertext').value='';checkconditions(this.value, this.name, this.type)\"
+     />
+    <label for=\"answer{{ name }}{{ code }}\" class=\"control-label radio-label\">
+        {{ answer }}
+    </label>
+</li>
 <!-- end of answer_row -->
 ", "/survey/questions/answer/listradio/rows/answer_row.twig", "C:\\xampp\\htdocs\\limesurvey\\themes\\question\\radio_accessible\\survey\\questions\\answer\\listradio\\rows\\answer_row.twig");
     }

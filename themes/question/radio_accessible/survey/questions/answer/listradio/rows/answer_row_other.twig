@@ -17,11 +17,28 @@
 #}
 
 <!-- answer_row_other -->
-<div id='javatbd{{myfname}}' class='form-group'>
-    <div class="row">
-        <label for="remarques_{{name}}" aria-label="Remarques" tabindex="0">Remarques</label>
-        <textarea class="form-control" id="remarques_{{name}}" rows="2" aria-label="Zone de texte pour remarques" tabindex="0"></textarea>
-    </div>
-</div>
-<!-- end of answer_row_other -->
+<li id='javatbd{{ myfname }}' class='form-group answer-item radio-text-item form' {{ sDisplayStyle }} >
+    <!-- Checkbox + label -->
+    <div class="form-group othertext-label-checkox-container">
 
+        <label for="SOTH{{ name }}" class="control-label label-radio" id="label-id-{{ name }}">{{ othertext }}</label>
+    </div>
+
+    <!-- comment -->
+    <div class="form-group text-item other-text-item">
+        <input
+        type="text"
+        tabindex="0"
+        role="textbox"
+        class="form-control {{ kpclass }} input-sm"
+        id="answer{{ name }}othertext"
+        name="{{ name }}other"
+        title="{{ othertext }}"
+        {{ answer_other }}
+        onkeyup="if($.trim($(this).val())!=''){ $('#SOTH{{ name }}').click(); };"
+        aria-labelledby="label-id-{{ name }}"
+        rows="2"
+        />
+    </div>
+</li>
+<!-- end of answer_row_other -->

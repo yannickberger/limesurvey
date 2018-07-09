@@ -355,12 +355,11 @@ $(document).ready(function(){
 });
 
 //Fonction qui remet le focus sur la premiere option de reponse apres avoir clique sur "Fermer" dans la modal
+//Pas encore fonctionnelle mais dans cette ordre d idee
 /*$(document).ready(function(){
     $( "#modal-fermer" ).click(function() {
-        console.log($('.answer-item'));
-        if($('.answer-item').length != 0){
-            $('.answer-item').first().focus();
-        }       
+        console.log($('ls-question-mandatory').first());
+        $("ls-question-mandatory").first().focus();       
     });
 });*/
 

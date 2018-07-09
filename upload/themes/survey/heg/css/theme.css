@@ -93,6 +93,8 @@ body {
 }
 .progress .progress-bar {
     line-height:19px;
+    background-color: #008ac9 !important;
+    color: black !important; 
 }
 .top-container .form-change-lang {text-align:center}
 
@@ -806,9 +808,10 @@ label::after{background-color:#337ab7}
     color: black !important;
 }
 
-input{
-    /*margin-bottom: 8px !important;*/
+.ls-em-tip{
+    color: #181B7C !important;
 }
+
 
 .dropdown-sub-menu a {
     color: black !important;

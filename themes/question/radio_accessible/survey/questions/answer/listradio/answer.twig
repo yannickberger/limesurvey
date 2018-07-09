@@ -11,19 +11,15 @@
 
 <!-- answer -->
 {{ sTimer }}
-<div class="{{coreClass}} container-fluid" role="radio-group" aria-labelledby="ls-question-text-{{name}}">
-	
-		{# rows/answer_row.php #}
-		{{sRows}}
 
-<!-- end of answer -->
+<div class="{{ coreClass }} row" role="radiogroup" aria-labelledby="ls-question-text-{{ name }}">
+    {# rows/answer_row.php #}
+    {{ sRows }}
 </div>
-<input
-    type="hidden"
-    name="java{{name}}"
-    id="java{{name}}"
-    value="{{value}}"
-    disabled
-/>
-
-
+{# Value for expression manager javascript (use id) ; no need to submit #}
+{{ C.Html.hiddenField("java"~name,value,({
+    'id' : "java"~name,
+    'disabled' : true,
+}))
+}}
+<!-- end of answer -->
