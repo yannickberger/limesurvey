@@ -354,7 +354,8 @@ $(document).ready(function(){
     });
 });
 
-//Fonction qui remet le focus sur la premiere option de reponse apres avoir clique sur "Fermer" dans la modal
+//Fonction qui remet le focus sur la premiere option de reponse
+// apres avoir clique sur "Fermer" dans la modal
 //Pas encore fonctionnelle mais dans cette ordre d idee
 /*$(document).ready(function(){
     $( "#modal-fermer" ).click(function() {
@@ -363,7 +364,11 @@ $(document).ready(function(){
     });
 });*/
 
-
+//Fonction qui permet d'ajouter dynamiquement des row
+//A la question concernant les pages
+//ID de question = IG041
+// ID système = 561
+// OU X844326X64X561 (moins précis car change avec chaque import du questionnaire)
 $(document).ready(function() {
 
    // A function to add or remove rows of an Array (Multi Flexible)(Text) question
