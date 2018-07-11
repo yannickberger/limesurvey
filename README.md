@@ -15,6 +15,11 @@ Essayez un questionnaire test : [Questionnaire de test](https://survey.limesurve
 
 # Installation
 
+En cas d'installation déjà effectué, il vous suffit de prendre les contenus des dossiers :
+- Application
+- Themes
+- Upload
+
 ## Composants nécéssaire
 Afin de pouvoir utiliser LimeSurvey il faut préalablement installer :
 - XAMPP (ou équivalent)
